@@ -102,7 +102,7 @@ EternalBlue/WannaCry. El host lleva comprometido desde al menos
 ---
 
 ## Estructura del Repositorio
-
+```text
 cloud-honeynet-aws/
 │
 ├── README.md                         Este archivo
@@ -151,7 +151,7 @@ cloud-honeynet-aws/
     ├── dionaea/                       Evidencias del despliegue Dionaea
     ├── dashboard/                     Capturas del Wazuh Dashboard
     └── queries/                       Screenshots de queries en DevTools
-
+```
 
 ---
 
