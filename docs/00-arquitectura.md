@@ -56,7 +56,7 @@ A -- "eventos indexados" --> W
 | Honeypot SMB/malware | Dionaea | **t3.micro** | Ubuntu 24.04 LTS | `10.0.10.154` | TCP/21 · 80 · 445 · 1433 |
 | SIEM central | Wazuh Stack | **m7i-flex.large** | Ubuntu 22.04 LTS | `10.0.20.51` | TCP/443 (dashboard) · 1514 · 1515 |
 > **Evidencia:** Consola AWS — EC2 Instances
-> ![AWS EC2 Instances](../../screenshots/arquitectura/aws-ec2-instances.png)
+> ![AWS EC2 Instances](screenshots/arquitectura/aws-ec2-instances.png)
 
 
 > **Nota:** El plan inicial contemplaba T-Pot CE en `t3.small`. Se escaló a
