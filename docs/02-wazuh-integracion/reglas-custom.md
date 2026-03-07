@@ -116,7 +116,7 @@ R100583 --> R100576
 ## 2. 100-cowrie_rules.xml
 
 **Ruta:** `/var/ossec/etc/rules/100-cowrie_rules.xml`  
-**Archivo fuente:** [`configs/wazuh/100-cowrie_rules.xml`](../configs/wazuh/100-cowrie_rules.xml)
+**Archivo fuente:** [`configs/wazuh/100-cowrie_rules.xml`](../../configs/100-cowrie_rules.xml)
 
 ### Contenido completo
 
