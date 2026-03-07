@@ -636,7 +636,7 @@ que trascienden el alcance del presente proyecto.
 
 > **Figura 9.3** — ![Reporte AbuseIPDB de 201.187.98.150](../screenshots/ti-reports/report-abuseipdb-201.187.98.150.png)
 > *Reporte AbuseIPDB de la IP 201.187.98.150 mostrando score 3/100,
-> ISP Hospital Base Valdivia y los 4 reportes previos de SMB scanning.*
+> ISP Hospital Base Valdivia y los 3 reportes previos de SMB scanning.*
 
 ### 9.5 Perfil Detallado — 158.51.96.38 (Botnet SSH)
 
