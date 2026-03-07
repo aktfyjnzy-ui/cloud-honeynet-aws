@@ -205,19 +205,19 @@ cloud-honeynet-aws/
 
 | Sección                                                                                 | Descripción                                             |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| [Despliegue Cowrie](cloud-honeynet-aws/docs/01-despliegue/cowrie)                       | Instalación, configuración y troubleshooting            |
-| [Despliegue T-Pot](cloud-honeynet-aws/docs/01-despliegue/tpot)                          | Instalación, permisos y escalado de instancia           |
-| [Despliegue Dionaea](cloud-honeynet-aws/docs/01-despliegue/dionaea)                     | Compilación, fix módulo Python y configuración          |
-| [Wazuh Stack](cloud-honeynet-aws/docs/01-despliegue/wazuh-stack)                        | All-in-one, archives, index patterns                    |
-| [Reglas Custom](cloud-honeynet-aws/docs/02-wazuh-integracion/reglas-custom)             | 19 reglas con MITRE y dependencias                      |
-| [Threat Intelligence](cloud-honeynet-aws/docs/02-wazuh-integracion/threat-intelligence) | Pipeline completo, dos fases, resultados                |
-| [Hallazgos](cloud-honeynet-aws/docs/03-analisis/hallazgos)                              | Análisis técnico de H1, H2 y H3                         |
-| [IoC](cloud-honeynet-aws/docs/03-analisis/ioc)                                          | Indicadores estructurados formato STIX-like             |
-| [Evidencias TI](cloud-honeynet-aws/docs/03-analisis/evidencias-ti/README)               | Reportes AbuseIPDB y GreyNoise por IP                   |
-| [Scripts](cloud-honeynet-aws/scripts/README)                                            | Referencia del pipeline TI y notificaciones             |
-| [Configs](cloud-honeynet-aws/configs/README)                                            | Archivos de configuración listos para desplegar         |
-| [Queries](cloud-honeynet-aws/configs/queries/README)                                    | Consultas OpenSearch para hunting                       |
-| [Informe Final](cloud-honeynet-aws/docs/04-informe-final)                               | Documento de síntesis de todo el proyecto y resultados. |
+| [Despliegue Cowrie](/docs/01-despliegue/cowrie)                       | Instalación, configuración y troubleshooting            |
+| [Despliegue T-Pot](/docs/01-despliegue/tpot)                          | Instalación, permisos y escalado de instancia           |
+| [Despliegue Dionaea](/docs/01-despliegue/dionaea)                     | Compilación, fix módulo Python y configuración          |
+| [Wazuh Stack](/docs/01-despliegue/wazuh-stack)                        | All-in-one, archives, index patterns                    |
+| [Reglas Custom](/docs/02-wazuh-integracion/reglas-custom)             | 19 reglas con MITRE y dependencias                      |
+| [Threat Intelligence](/docs/02-wazuh-integracion/threat-intelligence) | Pipeline completo, dos fases, resultados                |
+| [Hallazgos](/docs/03-analisis/hallazgos)                              | Análisis técnico de H1, H2 y H3                         |
+| [IoC](/docs/03-analisis/ioc)                                          | Indicadores estructurados formato STIX-like             |
+| [Evidencias TI](/docs/03-analisis/evidencias-ti/README)               | Reportes AbuseIPDB y GreyNoise por IP                   |
+| [Scripts](/scripts/README)                                            | Referencia del pipeline TI y notificaciones             |
+| [Configs](/configs/README)                                            | Archivos de configuración listos para desplegar         |
+| [Queries](/configs/queries/README)                                    | Consultas OpenSearch para hunting                       |
+| [Informe Final](/docs/04-informe-final)                               | Documento de síntesis de todo el proyecto y resultados. |
 
 ## Aviso Legal y Ético
 
