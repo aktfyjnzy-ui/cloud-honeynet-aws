@@ -391,7 +391,7 @@ curl -sk -o /dev/null -w "%{http_code}" \
 | ----------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [Panel principal Wazuh](../../screenshots/dashboard/wazuh-main-dashboard.png)    | Vista general del Wazuh Dashboard: contador total de eventos, distribución por sensor y mapa de ataque |
 | [Endpoints activos](../../screenshots/dashboard/wazuh-endpoints-active.png)  | Dashboard → Endpoints: los 3 agentes en estado **active** (Cowrie, T-Pot, Dionaea)                     |
-| [Wazuh archives en Discover](../../screenshots/dashboard/wazuh-discover-archives) | Discover con index `wazuh-archives-*` y eventos de los tres sensores                                   |
+| [Wazuh archives en Discover](../../screenshots/dashboard/wazuh-discover-archives.png) | Discover con index `wazuh-archives-*` y eventos de los tres sensores                                   |
 | [Alertas wazuh en Discover](../../screenshots/dashboard/wazuh-discover-alerts.png)   | Discover con index `wazuh-alerts-*` filtrando alertas por `rule.level >= 10`                           |
 ## Referencias
 
