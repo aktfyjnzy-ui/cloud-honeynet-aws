@@ -143,7 +143,7 @@ J --> L
 ---
 
 ## 3. Scripts — Referencia
-
+```text
 scripts/  
 ├── telegram/  
 │ └── send_telegram.sh Envía mensajes via Telegram Bot API  
@@ -154,7 +154,7 @@ scripts/
 ├── ti_emit_matches.py Emite matches TI al socket de analysisd  
 ├── run_ti_pipeline.sh Orquestador del pipeline baseline  
 └── run_ti_enrichment_v1.sh Orquestador del pipeline de enriquecimiento
-
+```
 ---
 
 ## 4. Pipeline Baseline — `run_ti_pipeline.sh`
