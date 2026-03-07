@@ -329,7 +329,7 @@ grep -c "." /var/ossec/etc/lists/honeynet-ti-ip.enriched.top200
 
 ## Referencias
 
-- [Análisis de Hallazgos](cloud-honeynet-aws/docs/03-analisis/hallazgos)
+- [Análisis de Hallazgos](../../docs/03-analisis/hallazgos.md)
     
 - [AbuseIPDB — 158.51.96.38](https://www.abuseipdb.com/check/158.51.96.38)
     
