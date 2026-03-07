@@ -1,0 +1,118 @@
+<group name="cowrie,honeypot,">
+
+  <!-- Agrupador general Cowrie -->
+  <rule id="100500" level="0">
+    <decoded_as>json</decoded_as>
+    <field name="eventid" type="pcre2">^cowrie\.</field>
+    <description>Cowrie: grouping rule (raw JSON events).</description>
+  </rule>
+
+  <!-- Conexión / cierre de sesión (bajo) -->
+  <rule id="100501" level="3">
+    <if_sid>100500</if_sid>
+    <field name="eventid">cowrie.session.connect</field>
+    <options>no_log</options>
+    <description>Cowrie: session connect.</description>
+    <group>cowrie,honeypot,</group>
+  </rule>
+
+  <rule id="100506" level="2">
+    <if_sid>100500</if_sid>
+    <field name="eventid">cowrie.session.closed</field>
+    <options>no_log</options>
+    <description>Cowrie: session closed.</description>
+    <group>cowrie,honeypot,</group>
+  </rule>
+
+  <!-- Login fallido base (noalert) para correlación brute force -->
+  <rule id="100502" level="3">
+    <if_sid>100500</if_sid>
+    <field name="eventid">cowrie.login.failed</field>
+
+    <!-- Importante: NO usar noalert aquí, porque rompe if_matched_sid -->
+    <options>no_log</options>
+
+    <description>Cowrie: login failed (base for correlation, no_log).</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>cowrie,honeypot,authentication_failed,</group>
+  </rule>
+
+
+  <!-- Login exitoso (en honeypot es señal fuerte) -->
+  <rule id="100503" level="8">
+    <if_sid>100500</if_sid>
+    <field name="eventid">cowrie.login.success</field>
+    <description>Cowrie: login success.</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>cowrie,honeypot,authentication_success,</group>
+  </rule>
+
+  <!-- Brute force separado por protocolo -->
+  <rule id="100504" level="10" frequency="10" timeframe="180" ignore="600">
+    <if_matched_sid>100502</if_matched_sid>
+    <same_field>src_ip</same_field>
+    <protocol>ssh</protocol>
+    <description>Cowrie: possible brute force (SSH) - many failed logins from same src_ip.</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>cowrie,honeypot,attack,bruteforce,</group>
+  </rule>
+
+  <rule id="100507" level="10" frequency="10" timeframe="180" ignore="600">
+    <if_matched_sid>100502</if_matched_sid>
+    <same_field>src_ip</same_field>
+    <protocol>telnet</protocol>
+    <description>Cowrie: possible brute force (Telnet) - many failed logins from same src_ip.</description>
+    <mitre>
+      <id>T1110.001</id>
+    </mitre>
+    <group>cowrie,honeypot,attack,bruteforce,</group>
+  </rule>
+
+  <!-- Comando Base (noalert) -->
+  <rule id="100505" level="1" noalert="1">
+    <if_sid>100500</if_sid>
+    <field name="eventid">cowrie.command.input</field>
+    <description>Cowrie: command input (base, noalert).</description>
+    <group>cowrie,honeypot,</group>
+  </rule>
+
+  <!-- Alta fidelidad: download + execute -->
+  <rule id="100511" level="13">
+    <if_sid>100505</if_sid>
+    <field name="input" type="pcre2">(?i)\b(curl|wget)\b.*(\|\s*(sh|bash)\b|\b-O-\s*-\b.*\|\s*(sh|bash)\b)</field>
+    <description>Cowrie: download+execute (pipe a shell): $(input)</description>
+    <mitre>
+      <id>T1059</id>
+    </mitre>
+    <group>attack,execution,cowrie,honeypot,</group>
+  </rule>
+
+  <!-- Crítico: reverse shell / interacción sospechosa -->
+  <rule id="100512" level="14">
+    <if_sid>100505</if_sid>
+    <field name="input" type="pcre2">(?i)(/dev/tcp/\d{1,3}(?:\.\d{1,3}){3}/\d+|\bnc\b.*\s-e\s|\bncat\b.*\s-e\s|\bsocat\b.*\sEXEC:|\bbash\b\s+-i\b)</field>
+    <description>Cowrie: probable reverse shell / interactive exec: $(input)</description>
+    <mitre>
+      <id>T1059</id>
+    </mitre>
+    <group>attack,execution,cowrie,honeypot,</group>
+  </rule>
+
+  <!-- Moderado: preparación -->
+  <rule id="100513" level="11">
+    <if_sid>100505</if_sid>
+    <field name="input" type="pcre2">(?i)\b(chmod\s+\+x|nohup|crontab|systemctl\s+enable)\b</field>
+    <description>Cowrie: suspicious prepare/persist attempt: $(input)</description>
+    <mitre>
+      <id>T1059</id>
+    </mitre>
+    <group>attack,cowrie,honeypot,</group>
+  </rule>
+
+</group>

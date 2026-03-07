@@ -1,0 +1,80 @@
+{
+  "took": 47,
+  "timed_out": false,
+  "_shards": {
+    "total": 69,
+    "successful": 69,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "por_honeypot": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "tpot",
+          "doc_count": 104674,
+          "tecnicas_mitre": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "Network Service Discovery",
+                "doc_count": 41859
+              }
+            ]
+          }
+        },
+        {
+          "key": "dionaea",
+          "doc_count": 64338,
+          "tecnicas_mitre": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "SMB/Windows Admin Shares",
+                "doc_count": 64171
+              },
+              {
+                "key": "Exploitation for Client Execution",
+                "doc_count": 159
+              }
+            ]
+          }
+        },
+        {
+          "key": "cowrie",
+          "doc_count": 44305,
+          "tecnicas_mitre": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "Password Guessing",
+                "doc_count": 44153
+              },
+              {
+                "key": "Command and Scripting Interpreter",
+                "doc_count": 19
+              },
+              {
+                "key": "Brute Force",
+                "doc_count": 11
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

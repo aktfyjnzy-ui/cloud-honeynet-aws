@@ -1,0 +1,14 @@
+{
+  "ipAddress": "201.187.98.150",
+  "abuseConfidenceScore": 3,
+  "countryCode": "CL",
+  "usageType": "Fixed Line ISP",
+  "isp": "HOSPITAL BASE VALDIVIA",
+  "domain": "gtdcompany.com",
+  "hostnames": [],
+  "totalReports": 4,
+  "numDistinctUsers": 1,
+  "lastReportedAt": "2026-03-03T08:23:35+00:00",
+  "source": "AbuseIPDB API v2",
+  "queriedAt": "2026-03-06"
+}

@@ -1,0 +1,14 @@
+{
+  "ipAddress": "158.51.96.38",
+  "abuseConfidenceScore": 100,
+  "countryCode": "US",
+  "usageType": "Data Center/Web Hosting/Transit",
+  "isp": "NetInformatik Inc.",
+  "domain": "netinformatik.com",
+  "hostnames": ["unknown.ip-xfer.net"],
+  "totalReports": 4307,
+  "numDistinctUsers": 924,
+  "lastReportedAt": "2026-03-06T05:15:42+00:00",
+  "source": "AbuseIPDB API v2",
+  "queriedAt": "2026-03-06"
+}

@@ -1,0 +1,1804 @@
+{
+  "took": 64,
+  "timed_out": false,
+  "_shards": {
+    "total": 69,
+    "successful": 69,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 85,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "oc0xwZwBAk5vx9H2ScuS",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:29:16.942+0000"
+        },
+        "sort": [
+          1772767756942
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "oM0xwZwBAk5vx9H2ScuS",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:29:16.942+0000"
+        },
+        "sort": [
+          1772767756942
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "n80xwZwBAk5vx9H2ScuS",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:29:16.901+0000"
+        },
+        "sort": [
+          1772767756901
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "Tc0wwZwBAk5vx9H2jsoE",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:28:28.887+0000"
+        },
+        "sort": [
+          1772767708887
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "8c0wwZwBAk5vx9H2asnX",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:28:18.886+0000"
+        },
+        "sort": [
+          1772767698886
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "8s0wwZwBAk5vx9H2asnX",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:28:18.886+0000"
+        },
+        "sort": [
+          1772767698886
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "8M0wwZwBAk5vx9H2asnX",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:28:16.886+0000"
+        },
+        "sort": [
+          1772767696886
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "8c0vwZwBAk5vx9H26cch",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:27:44.882+0000"
+        },
+        "sort": [
+          1772767664882
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "8s0vwZwBAk5vx9H26cch",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:27:44.882+0000"
+        },
+        "sort": [
+          1772767664882
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "8M0vwZwBAk5vx9H26cch",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:27:42.882+0000"
+        },
+        "sort": [
+          1772767662882
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "d80twZwBAk5vx9H2s8NF",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:25:20.869+0000"
+        },
+        "sort": [
+          1772767520869
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "eM0twZwBAk5vx9H2s8NF",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:25:20.869+0000"
+        },
+        "sort": [
+          1772767520869
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "W80twZwBAk5vx9H2p8ON",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:25:19.084+0000"
+        },
+        "sort": [
+          1772767519084
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "Ws0twZwBAk5vx9H2p8ON",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:25:19.044+0000"
+        },
+        "sort": [
+          1772767519044
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "UM0twZwBAk5vx9H2o8Om",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:25:14.870+0000"
+        },
+        "sort": [
+          1772767514870
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "Ts0twZwBAk5vx9H2o8Om",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:25:14.868+0000"
+        },
+        "sort": [
+          1772767514868
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.06",
+        "_id": "T80twZwBAk5vx9H2o8Om",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-06T03:25:14.868+0000"
+        },
+        "sort": [
+          1772767514868
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "W67ptpwBAk5vx9H2mbir",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:34:46.525+0000"
+        },
+        "sort": [
+          1772595286525
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "XK7ptpwBAk5vx9H2mbir",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:34:46.525+0000"
+        },
+        "sort": [
+          1772595286525
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "Wq7ptpwBAk5vx9H2mbir",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:34:46.484+0000"
+        },
+        "sort": [
+          1772595286484
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "Ma7ntpwBAk5vx9H22LVj",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:32:46.470+0000"
+        },
+        "sort": [
+          1772595166470
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "y67ntpwBAk5vx9H2nbTQ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:32:36.510+0000"
+        },
+        "sort": [
+          1772595156510
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "zK7ntpwBAk5vx9H2nbTQ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:32:36.510+0000"
+        },
+        "sort": [
+          1772595156510
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "yq7ntpwBAk5vx9H2nbTQ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:32:36.469+0000"
+        },
+        "sort": [
+          1772595156469
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "d67ltpwBAk5vx9H2qLED",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:30:24.501+0000"
+        },
+        "sort": [
+          1772595024501
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "dq7ltpwBAk5vx9H2qLED",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:30:24.501+0000"
+        },
+        "sort": [
+          1772595024501
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "da7ltpwBAk5vx9H2qLED",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:30:24.461+0000"
+        },
+        "sort": [
+          1772595024461
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "aa7jtpwBAk5vx9H2rK0U",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:28:18.467+0000"
+        },
+        "sort": [
+          1772594898467
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "Q67jtpwBAk5vx9H2qK0n",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:28:16.448+0000"
+        },
+        "sort": [
+          1772594896448
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "aq7itpwBAk5vx9H2BqkL",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:26:30.482+0000"
+        },
+        "sort": [
+          1772594790482
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "aa7itpwBAk5vx9H2BqkL",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:26:30.441+0000"
+        },
+        "sort": [
+          1772594790441
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "R67gtpwBAk5vx9H2JaVv",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:24:20.473+0000"
+        },
+        "sort": [
+          1772594660473
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "SK7gtpwBAk5vx9H2JaVv",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:24:20.473+0000"
+        },
+        "sort": [
+          1772594660473
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "Rq7gtpwBAk5vx9H2JaVv",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T03:24:20.432+0000"
+        },
+        "sort": [
+          1772594660432
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.04",
+        "_id": "waw6tpwBAk5vx9H2U03O",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.129.187.38",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 3.129.187.38"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-04T00:23:20.335+0000"
+        },
+        "sort": [
+          1772583800335
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "fKCDspwBAk5vx9H2cUMI",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-03T07:04:43.317+0000"
+        },
+        "sort": [
+          1772521483317
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "daCCspwBAk5vx9H2ij-J",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-03T07:03:43.318+0000"
+        },
+        "sort": [
+          1772521423318
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "BqCBspwBAk5vx9H2zjza",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-03T07:02:55.316+0000"
+        },
+        "sort": [
+          1772521375316
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "BaCBspwBAk5vx9H2zjza",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-03T07:02:55.314+0000"
+        },
+        "sort": [
+          1772521375314
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "m6CAspwBAk5vx9H27Dcs",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-03T07:01:57.304+0000"
+        },
+        "sort": [
+          1772521317304
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "cKB_spwBAk5vx9H23jGD",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-03T07:00:49.298+0000"
+        },
+        "sort": [
+          1772521249298
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "MKB-spwBAk5vx9H2hiuc",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "dionaea"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Dionaea - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-03T06:59:21.292+0000"
+        },
+        "sort": [
+          1772521161292
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "qeJrr5wBkLkmPFePHzD-",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:39:14.562+0000"
+        },
+        "sort": [
+          1772469554562
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "quJrr5wBkLkmPFePHzD-",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:39:14.562+0000"
+        },
+        "sort": [
+          1772469554562
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "OeJqr5wBkLkmPFeP5TBg",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:39:00.561+0000"
+        },
+        "sort": [
+          1772469540561
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "AeJqr5wBkLkmPFePwDCp",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:38:50.559+0000"
+        },
+        "sort": [
+          1772469530559
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "a-Jqr5wBkLkmPFePiy-A",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:38:38.558+0000"
+        },
+        "sort": [
+          1772469518558
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "GuJqr5wBkLkmPFePYC-G",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:38:28.558+0000"
+        },
+        "sort": [
+          1772469508558
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "6eJpr5wBkLkmPFePoSsE",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:37:38.594+0000"
+        },
+        "sort": [
+          1772469458594
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "6OJpr5wBkLkmPFePoSsE",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:37:38.553+0000"
+        },
+        "sort": [
+          1772469458553
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "d-Jpr5wBkLkmPFePECp0",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:36:56.591+0000"
+        },
+        "sort": [
+          1772469416591
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "eeJpr5wBkLkmPFePECp0",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:36:56.591+0000"
+        },
+        "sort": [
+          1772469416591
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "euJpr5wBkLkmPFePECp0",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:36:56.591+0000"
+        },
+        "sort": [
+          1772469416591
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "eOJpr5wBkLkmPFePECp0",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:36:56.591+0000"
+        },
+        "sort": [
+          1772469416591
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "duJpr5wBkLkmPFePECp0",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:36:56.550+0000"
+        },
+        "sort": [
+          1772469416550
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "dOJnr5wBkLkmPFeP9ycR",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:35:50.585+0000"
+        },
+        "sort": [
+          1772469350585
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "deJnr5wBkLkmPFeP9ycR",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:35:50.585+0000"
+        },
+        "sort": [
+          1772469350585
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "cuJnr5wBkLkmPFeP9ycR",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:35:50.585+0000"
+        },
+        "sort": [
+          1772469350585
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "c-Jnr5wBkLkmPFeP9ycR",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:35:50.585+0000"
+        },
+        "sort": [
+          1772469350585
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "ceJnr5wBkLkmPFeP9ycR",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:35:50.544+0000"
+        },
+        "sort": [
+          1772469350544
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "XeJnr5wBkLkmPFePiSao",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:35:22.582+0000"
+        },
+        "sort": [
+          1772469322582
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "XOJnr5wBkLkmPFePiSao",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.130.168.2",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.130.168.2"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T16:35:22.541+0000"
+        },
+        "sort": [
+          1772469322541
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "utq6rJwBkLkmPFeP8pZl",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:07:37.435+0000"
+        },
+        "sort": [
+          1772424457435
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "YNq6rJwBkLkmPFePy5ZQ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:07:27.428+0000"
+        },
+        "sort": [
+          1772424447428
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "Xtq6rJwBkLkmPFePy5ZQ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:07:27.426+0000"
+        },
+        "sort": [
+          1772424447426
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "X9q6rJwBkLkmPFePy5ZQ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:07:27.426+0000"
+        },
+        "sort": [
+          1772424447426
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "Xtq6rJwBkLkmPFePbZWL",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:07:02.240+0000"
+        },
+        "sort": [
+          1772424422240
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "Xdq6rJwBkLkmPFePbZWL",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:07:02.240+0000"
+        },
+        "sort": [
+          1772424422240
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "XNq6rJwBkLkmPFePbZWL",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:07:02.199+0000"
+        },
+        "sort": [
+          1772424422199
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "N9q4rJwBkLkmPFePkJCg",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:59.416+0000"
+        },
+        "sort": [
+          1772424299416
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "Ntq4rJwBkLkmPFePkJCg",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:59.416+0000"
+        },
+        "sort": [
+          1772424299416
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "Ndq4rJwBkLkmPFePkJCg",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:58.187+0000"
+        },
+        "sort": [
+          1772424298187
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "4Nq3rJwBkLkmPFePuYyx",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:00.223+0000"
+        },
+        "sort": [
+          1772424240223
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "3tq3rJwBkLkmPFePuYyx",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:00.222+0000"
+        },
+        "sort": [
+          1772424240222
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "4dq3rJwBkLkmPFePuYyx",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:00.222+0000"
+        },
+        "sort": [
+          1772424240222
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "39q3rJwBkLkmPFePuYyx",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:00.222+0000"
+        },
+        "sort": [
+          1772424240222
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "3dq3rJwBkLkmPFePuYyx",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:04:00.181+0000"
+        },
+        "sort": [
+          1772424240181
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "Gdq3rJwBkLkmPFePf4wT",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:03:51.409+0000"
+        },
+        "sort": [
+          1772424231409
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "F9q3rJwBkLkmPFePf4wT",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:03:51.407+0000"
+        },
+        "sort": [
+          1772424231407
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.02",
+        "_id": "GNq3rJwBkLkmPFePf4wT",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 18.218.118.203"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-02T04:03:51.407+0000"
+        },
+        "sort": [
+          1772424231407
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.01",
+        "_id": "N9erq5wBkLkmPFePM2OB",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "18.218.118.203",
+            "@source": "tpot"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en T-Pot - "
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-01T23:10:48.493+0000"
+        },
+        "sort": [
+          1772406648493
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.01",
+        "_id": "kNekq5wBkLkmPFePcDy9",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.129.187.38",
+            "@source": "tpot"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en T-Pot - "
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-01T23:03:21.082+0000"
+        },
+        "sort": [
+          1772406201082
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.01",
+        "_id": "e9ekq5wBkLkmPFePbzzJ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.129.187.38",
+            "@source": "tpot"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en T-Pot - "
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-01T23:03:20.173+0000"
+        },
+        "sort": [
+          1772406200173
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.01",
+        "_id": "etekq5wBkLkmPFePbzzJ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.129.187.38",
+            "@source": "tpot"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en T-Pot - "
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-01T23:03:20.065+0000"
+        },
+        "sort": [
+          1772406200065
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.01",
+        "_id": "cNeTq5wBkLkmPFePnS8C",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "3.129.187.38",
+            "@source": "cowrie"
+          },
+          "rule": {
+            "description": "HoneyNet/TI: match Threat Intel en Cowrie - 3.129.187.38"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-03-01T22:44:57.896+0000"
+        },
+        "sort": [
+          1772405097896
+        ]
+      }
+    ]
+  }
+}

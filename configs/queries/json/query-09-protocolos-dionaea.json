@@ -1,0 +1,59 @@
+{
+  "took": 14,
+  "timed_out": false,
+  "_shards": {
+    "total": 69,
+    "successful": 69,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "por_protocolo": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": []
+    },
+    "por_puerto": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "445",
+          "doc_count": 64178
+        },
+        {
+          "key": "80",
+          "doc_count": 112
+        },
+        {
+          "key": "1433",
+          "doc_count": 34
+        },
+        {
+          "key": "21",
+          "doc_count": 11
+        },
+        {
+          "key": "33787",
+          "doc_count": 1
+        },
+        {
+          "key": "34471",
+          "doc_count": 1
+        },
+        {
+          "key": "37941",
+          "doc_count": 1
+        }
+      ]
+    }
+  }
+}

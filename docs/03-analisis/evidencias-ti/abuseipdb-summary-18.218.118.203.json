@@ -1,0 +1,14 @@
+{
+  "ipAddress": "18.218.118.203",
+  "abuseConfidenceScore": 100,
+  "countryCode": "US",
+  "usageType": "Data Center/Web Hosting/Transit",
+  "isp": "Amazon Technologies Inc.",
+  "domain": "amazon.com",
+  "hostnames": ["scan.visionheight.com"],
+  "totalReports": 3801,
+  "numDistinctUsers": 625,
+  "lastReportedAt": "2026-03-06T06:16:47+00:00",
+  "source": "AbuseIPDB API v2",
+  "queriedAt": "2026-03-06"
+}

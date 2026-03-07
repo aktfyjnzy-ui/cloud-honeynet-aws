@@ -1,0 +1,482 @@
+{
+  "took": 180,
+  "timed_out": false,
+  "_shards": {
+    "total": 69,
+    "successful": 69,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_usuarios": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "root",
+          "doc_count": 44143
+        },
+        {
+          "key": "test",
+          "doc_count": 3
+        },
+        {
+          "key": "Accept-Encoding: gzip",
+          "doc_count": 2
+        },
+        {
+          "key": "GET / HTTP/1.1",
+          "doc_count": 2
+        },
+        {
+          "key": "Max-Forwards: 70",
+          "doc_count": 2
+        },
+        {
+          "key": "User-Agent: visionheight.com/scan Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36",
+          "doc_count": 2
+        },
+        {
+          "key": "esroot",
+          "doc_count": 2
+        },
+        {
+          "key": "sonar",
+          "doc_count": 2
+        },
+        {
+          "key": "Administrator",
+          "doc_count": 1
+        },
+        {
+          "key": "cabify",
+          "doc_count": 1
+        },
+        {
+          "key": "demo",
+          "doc_count": 1
+        },
+        {
+          "key": "dolphinscheduler",
+          "doc_count": 1
+        },
+        {
+          "key": "elk",
+          "doc_count": 1
+        },
+        {
+          "key": "kms",
+          "doc_count": 1
+        },
+        {
+          "key": "mongo",
+          "doc_count": 1
+        },
+        {
+          "key": "nginx",
+          "doc_count": 1
+        },
+        {
+          "key": "oracle",
+          "doc_count": 1
+        },
+        {
+          "key": "pwserver",
+          "doc_count": 1
+        },
+        {
+          "key": "qinsiqing",
+          "doc_count": 1
+        },
+        {
+          "key": "ssc",
+          "doc_count": 1
+        },
+        {
+          "key": "zookeeper",
+          "doc_count": 1
+        }
+      ]
+    },
+    "top_combos": {
+      "doc_count_error_upper_bound": 6,
+      "sum_other_doc_count": 42963,
+      "buckets": [
+        {
+          "key": [
+            "root",
+            "admin"
+          ],
+          "key_as_string": "root|admin",
+          "doc_count": 112
+        },
+        {
+          "key": [
+            "root",
+            "password"
+          ],
+          "key_as_string": "root|password",
+          "doc_count": 112
+        },
+        {
+          "key": [
+            "root",
+            "123"
+          ],
+          "key_as_string": "root|123",
+          "doc_count": 103
+        },
+        {
+          "key": [
+            "root",
+            "12345"
+          ],
+          "key_as_string": "root|12345",
+          "doc_count": 99
+        },
+        {
+          "key": [
+            "root",
+            "qwerty"
+          ],
+          "key_as_string": "root|qwerty",
+          "doc_count": 81
+        },
+        {
+          "key": [
+            "root",
+            "1234"
+          ],
+          "key_as_string": "root|1234",
+          "doc_count": 77
+        },
+        {
+          "key": [
+            "root",
+            "12345678"
+          ],
+          "key_as_string": "root|12345678",
+          "doc_count": 74
+        },
+        {
+          "key": [
+            "root",
+            "1"
+          ],
+          "key_as_string": "root|1",
+          "doc_count": 70
+        },
+        {
+          "key": [
+            "root",
+            "123456789"
+          ],
+          "key_as_string": "root|123456789",
+          "doc_count": 70
+        },
+        {
+          "key": [
+            "root",
+            "12"
+          ],
+          "key_as_string": "root|12",
+          "doc_count": 67
+        },
+        {
+          "key": [
+            "root",
+            "root123"
+          ],
+          "key_as_string": "root|root123",
+          "doc_count": 42
+        },
+        {
+          "key": [
+            "root",
+            "111111"
+          ],
+          "key_as_string": "root|111111",
+          "doc_count": 33
+        },
+        {
+          "key": [
+            "root",
+            "123123"
+          ],
+          "key_as_string": "root|123123",
+          "doc_count": 27
+        },
+        {
+          "key": [
+            "root",
+            "ubuntu"
+          ],
+          "key_as_string": "root|ubuntu",
+          "doc_count": 25
+        },
+        {
+          "key": [
+            "root",
+            "root321"
+          ],
+          "key_as_string": "root|root321",
+          "doc_count": 22
+        },
+        {
+          "key": [
+            "root",
+            "321"
+          ],
+          "key_as_string": "root|321",
+          "doc_count": 19
+        },
+        {
+          "key": [
+            "root",
+            "pass"
+          ],
+          "key_as_string": "root|pass",
+          "doc_count": 19
+        },
+        {
+          "key": [
+            "root",
+            "1qaz2wsx"
+          ],
+          "key_as_string": "root|1qaz2wsx",
+          "doc_count": 17
+        },
+        {
+          "key": [
+            "root",
+            "toor"
+          ],
+          "key_as_string": "root|toor",
+          "doc_count": 16
+        },
+        {
+          "key": [
+            "root",
+            "admin123"
+          ],
+          "key_as_string": "root|admin123",
+          "doc_count": 14
+        },
+        {
+          "key": [
+            "root",
+            "1234567890"
+          ],
+          "key_as_string": "root|1234567890",
+          "doc_count": 13
+        },
+        {
+          "key": [
+            "root",
+            "1234567"
+          ],
+          "key_as_string": "root|1234567",
+          "doc_count": 12
+        },
+        {
+          "key": [
+            "root",
+            "password1"
+          ],
+          "key_as_string": "root|password1",
+          "doc_count": 12
+        },
+        {
+          "key": [
+            "root",
+            "!root"
+          ],
+          "key_as_string": "root|!root",
+          "doc_count": 11
+        },
+        {
+          "key": [
+            "root",
+            "1qaz@WSX"
+          ],
+          "key_as_string": "root|1qaz@WSX",
+          "doc_count": 10
+        },
+        {
+          "key": [
+            "root",
+            "P@ssw0rd"
+          ],
+          "key_as_string": "root|P@ssw0rd",
+          "doc_count": 10
+        },
+        {
+          "key": [
+            "root",
+            "P@ssw0rd2026"
+          ],
+          "key_as_string": "root|P@ssw0rd2026",
+          "doc_count": 10
+        },
+        {
+          "key": [
+            "root",
+            "qwerty123456"
+          ],
+          "key_as_string": "root|qwerty123456",
+          "doc_count": 10
+        },
+        {
+          "key": [
+            "root",
+            "root!@#"
+          ],
+          "key_as_string": "root|root!@#",
+          "doc_count": 10
+        },
+        {
+          "key": [
+            "root",
+            "1q2w3e4r"
+          ],
+          "key_as_string": "root|1q2w3e4r",
+          "doc_count": 8
+        }
+      ]
+    },
+    "top_passwords": {
+      "doc_count_error_upper_bound": 6,
+      "sum_other_doc_count": 42963,
+      "buckets": [
+        {
+          "key": "admin",
+          "doc_count": 112
+        },
+        {
+          "key": "password",
+          "doc_count": 112
+        },
+        {
+          "key": "123",
+          "doc_count": 103
+        },
+        {
+          "key": "12345",
+          "doc_count": 99
+        },
+        {
+          "key": "qwerty",
+          "doc_count": 81
+        },
+        {
+          "key": "1234",
+          "doc_count": 77
+        },
+        {
+          "key": "12345678",
+          "doc_count": 74
+        },
+        {
+          "key": "1",
+          "doc_count": 70
+        },
+        {
+          "key": "123456789",
+          "doc_count": 70
+        },
+        {
+          "key": "12",
+          "doc_count": 67
+        },
+        {
+          "key": "root123",
+          "doc_count": 42
+        },
+        {
+          "key": "111111",
+          "doc_count": 33
+        },
+        {
+          "key": "123123",
+          "doc_count": 27
+        },
+        {
+          "key": "ubuntu",
+          "doc_count": 25
+        },
+        {
+          "key": "root321",
+          "doc_count": 22
+        },
+        {
+          "key": "321",
+          "doc_count": 19
+        },
+        {
+          "key": "pass",
+          "doc_count": 19
+        },
+        {
+          "key": "1qaz2wsx",
+          "doc_count": 17
+        },
+        {
+          "key": "toor",
+          "doc_count": 16
+        },
+        {
+          "key": "admin123",
+          "doc_count": 14
+        },
+        {
+          "key": "1234567890",
+          "doc_count": 13
+        },
+        {
+          "key": "1234567",
+          "doc_count": 12
+        },
+        {
+          "key": "password1",
+          "doc_count": 12
+        },
+        {
+          "key": "!root",
+          "doc_count": 11
+        },
+        {
+          "key": "1qaz@WSX",
+          "doc_count": 10
+        },
+        {
+          "key": "P@ssw0rd",
+          "doc_count": 10
+        },
+        {
+          "key": "P@ssw0rd2026",
+          "doc_count": 10
+        },
+        {
+          "key": "qwerty123456",
+          "doc_count": 10
+        },
+        {
+          "key": "root!@#",
+          "doc_count": 10
+        },
+        {
+          "key": "1q2w3e4r",
+          "doc_count": 8
+        }
+      ]
+    }
+  }
+}

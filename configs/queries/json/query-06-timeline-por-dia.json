@@ -1,0 +1,472 @@
+{
+  "took": 73,
+  "timed_out": false,
+  "_shards": {
+    "total": 69,
+    "successful": 69,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "por_dia": {
+      "buckets": [
+        {
+          "key_as_string": "2026-02-04T00:00:00.000Z",
+          "key": 1770163200000,
+          "doc_count": 307,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-05T00:00:00.000Z",
+          "key": 1770249600000,
+          "doc_count": 179,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-06T00:00:00.000Z",
+          "key": 1770336000000,
+          "doc_count": 899,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 3
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-07T00:00:00.000Z",
+          "key": 1770422400000,
+          "doc_count": 136,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 22
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-08T00:00:00.000Z",
+          "key": 1770508800000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-09T00:00:00.000Z",
+          "key": 1770595200000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-10T00:00:00.000Z",
+          "key": 1770681600000,
+          "doc_count": 33,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-11T00:00:00.000Z",
+          "key": 1770768000000,
+          "doc_count": 8,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-12T00:00:00.000Z",
+          "key": 1770854400000,
+          "doc_count": 1026,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 663
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-13T00:00:00.000Z",
+          "key": 1770940800000,
+          "doc_count": 797,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-14T00:00:00.000Z",
+          "key": 1771027200000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-15T00:00:00.000Z",
+          "key": 1771113600000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-16T00:00:00.000Z",
+          "key": 1771200000000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-17T00:00:00.000Z",
+          "key": 1771286400000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-18T00:00:00.000Z",
+          "key": 1771372800000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-19T00:00:00.000Z",
+          "key": 1771459200000,
+          "doc_count": 0,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key_as_string": "2026-02-20T00:00:00.000Z",
+          "key": 1771545600000,
+          "doc_count": 20349,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 12237
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 103
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-21T00:00:00.000Z",
+          "key": 1771632000000,
+          "doc_count": 14682,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 14080
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 62
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-22T00:00:00.000Z",
+          "key": 1771718400000,
+          "doc_count": 59313,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 33843
+              },
+              {
+                "key": "tpot",
+                "doc_count": 13506
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-23T00:00:00.000Z",
+          "key": 1771804800000,
+          "doc_count": 3534,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 624
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 163
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-24T00:00:00.000Z",
+          "key": 1771891200000,
+          "doc_count": 8665,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 49
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-25T00:00:00.000Z",
+          "key": 1771977600000,
+          "doc_count": 10065,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 77
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-26T00:00:00.000Z",
+          "key": 1772064000000,
+          "doc_count": 9798,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 109
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-27T00:00:00.000Z",
+          "key": 1772150400000,
+          "doc_count": 18792,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 8933
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-02-28T00:00:00.000Z",
+          "key": 1772236800000,
+          "doc_count": 9738,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "cowrie",
+                "doc_count": 96
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-03-01T00:00:00.000Z",
+          "key": 1772323200000,
+          "doc_count": 12375,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 6222
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 173
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-03-02T00:00:00.000Z",
+          "key": 1772409600000,
+          "doc_count": 15137,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 13644
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 330
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-03-03T00:00:00.000Z",
+          "key": 1772496000000,
+          "doc_count": 79963,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "dionaea",
+                "doc_count": 64303
+              },
+              {
+                "key": "tpot",
+                "doc_count": 14801
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 163
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-03-04T00:00:00.000Z",
+          "key": 1772582400000,
+          "doc_count": 14300,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 13629
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 129
+              },
+              {
+                "key": "dionaea",
+                "doc_count": 35
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-03-05T00:00:00.000Z",
+          "key": 1772668800000,
+          "doc_count": 13647,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 13120
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 27
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "2026-03-06T00:00:00.000Z",
+          "key": 1772755200000,
+          "doc_count": 2290,
+          "por_honeypot": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "tpot",
+                "doc_count": 2188
+              },
+              {
+                "key": "cowrie",
+                "doc_count": 23
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

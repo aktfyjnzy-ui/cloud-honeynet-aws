@@ -1,0 +1,189 @@
+<!-- Local rules -->
+<!-- Modify it at your will. -->
+<!-- Copyright (C) 2015, Wazuh Inc. -->
+
+<!-- ==================== REGLA DE EJEMPLO (sshd) ==================== -->
+<group name="local,syslog,sshd,">
+  <rule id="100001" level="5">
+    <if_sid>5716</if_sid>
+    <srcip>1.1.1.1</srcip>
+    <description>sshd: authentication failed from IP 1.1.1.1.</description>
+    <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5</group>
+  </rule>
+</group>
+
+<!-- ==================== HONEYNET TI - COWRIE ====================
+     ORDEN CRÍTICO: 100550/100578 van AQUÍ porque dependen de 100500
+     que está en 100-cowrie_rules.xml (cargado antes que local_rules.xml).
+     ================================================================ -->
+<group name="honeynet,ti,enriched,">
+
+  <!-- CDB lookup Cowrie: hijo de 100500 (cowrie_rules.xml) -->
+  <rule id="100550" level="10">
+    <if_sid>100500</if_sid>
+    <list field="src_ip" lookup="address_match_key">etc/lists/honeynet-ti-ip.enriched.top200</list>
+    <description>HoneyNet TI: src_ip en CDB TOP200 - Cowrie ($(src_ip))</description>
+    <group>honeynet_ti_enriched</group>
+  </rule>
+
+  <rule id="100578" level="10">
+    <if_sid>100550</if_sid>
+    <description>HoneyNet/TI: match Threat Intel en Cowrie - $(src_ip)</description>
+    <group>honeynet_ti,cowrie</group>
+  </rule>
+
+</group>
+
+<!-- ==================== REGLAS HONEYNET - COWRIE + T-POT ====================
+     ORDEN CRÍTICO: 100568 (T-Pot parent) DEBE definirse en este bloque
+     ANTES de que las reglas TI de T-Pot (100551/100579) lo referencien.
+     ========================================================================= -->
+<group name="honeynet,honeypots,tpot,">
+
+  <!-- PARENT T-POT -->
+  <rule id="100568" level="0">
+    <decoded_as>json</decoded_as>
+    <field name="@source">tpot</field>
+    <description>HoneyNet/T-Pot: evento detectado (parent rule).</description>
+    <group>honeynet,tpot</group>
+  </rule>
+
+  <!-- PARENT DIONAEA -->
+  <rule id="100582" level="0">
+    <decoded_as>json</decoded_as>
+    <field name="@source">dionaea</field>
+    <description>HoneyNet/Dionaea: evento detectado (parent rule).</description>
+    <group>honeynet,dionaea</group>
+          </rule>
+
+  <!-- CDB lookup T-Pot: hijo de 100568 (definido arriba) -->
+  <rule id="100551" level="10">
+    <if_sid>100568</if_sid>
+    <field name="@source">tpot</field>
+    <list field="client_ip" lookup="address_match_key">etc/lists/honeynet-ti-ip.enriched.top200</list>
+    <description>HoneyNet TI: src_ip en CDB TOP200 - T-Pot ($(client_ip))</description>
+    <group>honeynet_ti_enriched</group>
+  </rule>
+
+  <rule id="100579" level="10">
+    <if_sid>100551</if_sid>
+    <description>HoneyNet/TI: match Threat Intel en T-Pot - $(client_ip)</description>
+    <group>honeynet_ti,tpot</group>
+  </rule>
+
+  <!-- CDB lookup Dionaea: hijo de 100582 (definido arriba) -->
+  <rule id="100553" level="10">
+    <if_sid>100582</if_sid>
+    <field name="@source">dionaea</field>
+    <list field="src_ip" lookup="address_match_key">etc/lists/honeynet-ti-ip.enriched.top200</list>
+    <description>HoneyNet TI: src_ip en CDB TOP200 - Dionaea ($(src_ip))</description>
+    <group>honeynet_ti_enriched</group>
+  </rule>
+
+  <rule id="100580" level="10">
+    <if_sid>100553</if_sid>
+    <description>HoneyNet/TI: match Threat Intel en Dionaea - $(src_ip)</description>
+    <group>honeynet_ti,dionaea</group>
+  </rule>
+
+  <!-- T-Pot: RDP -->
+  <rule id="100571" level="4">
+    <if_sid>100568</if_sid>
+    <match>RDP connection request</match>
+    <field name="client_ip">\S+</field>
+    <description>HoneyNet/T-Pot: RDP connection request - $(client_ip)</description>
+    <mitre><id>T1046</id></mitre>
+    <group>honeynet_auth_probe,tpot,rdp,scan</group>
+  </rule>
+
+  <!-- T-Pot: SSH -->
+  <rule id="100572" level="4">
+    <if_sid>100568</if_sid>
+    <match>SSH Scan|SSH session|Potential SSH</match>
+    <field name="client_ip">\S+</field>
+    <description>HoneyNet/T-Pot: SSH scan/session - $(client_ip)</description>
+    <mitre><id>T1046</id></mitre>
+    <group>honeynet_auth_probe,tpot,ssh,scan</group>
+  </rule>
+
+  <!-- T-Pot: Scans NMAP/CINS/ET -->
+  <rule id="100581" level="3">
+    <if_sid>100568</if_sid>
+    <match>ET SCAN|ET CINS|reputation|NMAP|scan|probe</match>
+    <description>HoneyNet/T-Pot: scan/probe/reputation (NMAP, CINS, etc.).</description>
+    <mitre><id>T1046</id></mitre>
+    <group>honeynet_scan,tpot,scan</group>
+  </rule>
+
+  <!-- Cowrie: dropper command (hijo de 100505 en cowrie_rules.xml) -->
+  <rule id="100577" level="12">
+    <if_sid>100505</if_sid>
+    <field name="input" type="pcre2">(?i)\\b(wget|curl|tftp|ftpget|python\\s+-c|perl\\s+-e)\\b</field>
+    <description>HoneyNet/Cowrie: dropper command desde $(src_ip).</description>
+    <mitre><id>T1105</id></mitre>
+    <group>honeynet_execution,cowrie,attack</group>
+  </rule>
+
+  <!-- Threshold: Cowrie brute-force (depende de 100502 en cowrie_rules.xml) -->
+  <rule id="100573" level="10" frequency="8" timeframe="120" ignore="60">
+    <if_matched_sid>100502</if_matched_sid>
+    <same_field>src_ip</same_field>
+    <description>HoneyNet/Cowrie: posible brute-force SSH (>=8 login.failed/120s) desde $(src_ip).</description>
+    <mitre><id>T1110</id></mitre>
+    <group>honeynet_bruteforce,cowrie,credential_access</group>
+  </rule>
+
+  <!-- Threshold: T-Pot RDP repetición -->
+  <rule id="100574" level="8" frequency="10" timeframe="300" ignore="120">
+    <if_matched_sid>100571</if_matched_sid>
+    <same_field>client_ip</same_field>
+    <description>HoneyNet/T-Pot: alta repetición RDP (>=10/300s) desde $(client_ip).</description>
+    <mitre><id>T1046</id></mitre>
+    <group>honeynet_scan,tpot,rdp</group>
+  </rule>
+
+  <!-- Threshold: T-Pot SSH repetición -->
+  <rule id="100575" level="8" frequency="10" timeframe="300" ignore="120">
+    <if_matched_sid>100572</if_matched_sid>
+    <same_field>client_ip</same_field>
+    <description>HoneyNet/T-Pot: alta repetición SSH (>=10/300s) desde $(client_ip).</description>
+    <mitre><id>T1046</id></mitre>
+    <group>honeynet_scan,tpot,ssh</group>
+  </rule>
+
+  <!-- Correlación multi-honeypot -->
+  <rule id="100576" level="12" frequency="2" timeframe="600" ignore="300">
+    <if_matched_group>honeynet_auth_probe</if_matched_group>
+    <same_field>client_ip</same_field>
+    <description>HoneyNet: actividad coordinada multi-honeypot desde $(client_ip) (>=2 honeypots/600s).</description>
+    <mitre><id>T1595</id></mitre>
+    <group>honeynet_coordinated,correlation</group>
+  </rule>
+
+  <!-- Dionaea: cualquier conexión detectada -->
+  <rule id="100583" level="3">
+    <if_sid>100582</if_sid>
+    <description>HoneyNet/Dionaea: conexión capturada en $(dst_port) desde $(src_ip)</description>
+    <mitre><id>T1203</id></mitre>
+    <group>honeynet,dionaea,connection</group>
+  </rule>
+
+  <!-- Dionaea: SMB específico -->
+  <rule id="100584" level="6">
+    <if_sid>100582</if_sid>
+    <field name="dst_port">^445$</field>
+    <description>HoneyNet/Dionaea: intento SMB desde $(src_ip)</description>
+    <mitre><id>T1021.002</id></mitre>
+    <group>honeynet,dionaea,smb</group>
+  </rule>
+
+    <!-- Override Suricata built-in para eventos T-Pot: agrega contexto MITRE -->
+  <rule id="100585" level="3">
+    <if_sid>86601</if_sid>
+    <field name="@source">tpot</field>
+    <description>HoneyNet/T-Pot: Suricata IDS alert - Network scan/probe</description>
+    <mitre><id>T1046</id></mitre>
+    <group>honeynet,tpot,ids,suricata</group>
+  </rule>
+
+</group>

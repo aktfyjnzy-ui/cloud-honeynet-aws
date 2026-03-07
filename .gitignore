@@ -1,0 +1,11 @@
+secrets/
+*.env
+*.pem
+inputs/
+outputs/
+lists/cdb/
+scripts/ti/cache/
+logs/
+docs/03-analisis/evidencias-ti/reporte-abuseipdb-*.json
+*.tmp
+binaries/

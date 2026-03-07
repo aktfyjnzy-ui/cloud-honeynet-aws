@@ -1,0 +1,38 @@
+{
+  "took": 11,
+  "timed_out": false,
+  "_shards": {
+    "total": 69,
+    "successful": 69,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "por_honeypot": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "dionaea",
+          "doc_count": 64338
+        },
+        {
+          "key": "tpot",
+          "doc_count": 63481
+        },
+        {
+          "key": "cowrie",
+          "doc_count": 9838
+        }
+      ]
+    }
+  }
+}
