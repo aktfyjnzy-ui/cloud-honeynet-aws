@@ -325,7 +325,7 @@ LATERAL_MOVEMENT   → T1021.002 (SMB)  H3 nivel 6
 ## 8. IoC — Resumen
 
 > Ver lista completa con formato estructurado en  
-> [`docs/03-analisis/ioc.md`](cloud-honeynet-aws/docs/03-analisis/ioc)
+> [`docs/03-analisis/ioc.md`](../../docs/03-analisis/ioc.md)
 
 | Indicador                   | Tipo    | Confianza | Hallazgo |
 | --------------------------- | ------- | --------- | -------- |
@@ -348,7 +348,7 @@ LATERAL_MOVEMENT   → T1021.002 (SMB)  H3 nivel 6
 
 - [IoC estructurados](../../docs/03-analisis/ioc.md)
     
-- [Reglas de detección](../../docs/02-wazuh-integracion/reglas-custom)
+- [Reglas de detección](../../docs/02-wazuh-integracion/reglas-custom.md)
     
 - [Queries de análisis](../../configs/queries/README.md)
     
