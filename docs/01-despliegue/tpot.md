@@ -65,10 +65,10 @@ protocolos, complementando a Cowrie (SSH) y Dionaea (SMB/malware).
 | Inbound | TCP | 64297 | `<IP-admin>/32` |
 | Outbound | TCP | 1514, 1515 | `chn-sg-wazuh` |
 
-> ⚠️ Durante la instalación abrir temporalmente **Outbound TCP/80 y
+> Durante la instalación abrir temporalmente **Outbound TCP/80 y
 > TCP/443** para que el script descargue imágenes Docker. Cerrar al finalizar.
 
-> ⚠️ T-Pot reasigna el SSH del sistema operativo al puerto **64295**
+> T-Pot reasigna el SSH del sistema operativo al puerto **64295**
 > durante la instalación. Antes de ejecutar `install.sh`, habilitar
 > TCP/22 temporal desde `<IP-admin>/32` para no perder acceso.
 > Una vez completada la instalación y validado el acceso por 64295,
@@ -364,9 +364,9 @@ sudo grep -i "permission denied" /var/ossec/logs/ossec.log | grep tpotce
 
 | Archivo                       | Contenido                                                                |
 | ----------------------------- | ------------------------------------------------------------------------ |
-| `tpot-wazuh-agent-active.png` | Dashboard Wazuh → Endpoints: agente `ip-10-0-10-76` en estado **active** |
-| `tpot-archives-eventos.png`   | Discover `wazuh-archives-*` filtrando `data.@source:"tpot"`              |
-| `tpot-dps-containers.png`     | Salida de `dps` mostrando los contenedores activos                       |
+| [Agente wazuh tpot activo](../../screenshots/tpot/tpot-wazuh-agent-active.png) | Dashboard Wazuh → Endpoints: agente `ip-10-0-10-76` en estado **active** |
+| [Eventos de archivos tpot](../../screenshots/tpot/tpot-archives-eventos.png)   | Discover `wazuh-archives-*` filtrando `data.@source:"tpot"`              |
+| [Contenedores tpot](../../screenshots/tpot/tpot-dps-containers.png)     | Salida de `dps` mostrando los contenedores activos                       |
 ## Referencias
 
 - [T-Pot CE — Repositorio oficial](https://github.com/telekom-security/tpotce)
