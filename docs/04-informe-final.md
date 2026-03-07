@@ -247,7 +247,7 @@ en los tres honeypots de la siguiente manera:
 | Cowrie | 9,838 | 7.1% | SSH TCP/22 |
 | **TOTAL** | **137,657** | **100%** | |
 
-> **Figura 5.1** — `screenshot-wazuh-main-dashboard.png`
+> **Figura 5.1** — `screenshot-wazuh-main-dashboard.png`[Dashboard principal-Wazuh](../screenshots/dashboard/wazuh-main-dashboard.png)
 > *Vista general del Wazuh Dashboard con el contador total de eventos,
 > distribución por honeypot y mapa de ataque en tiempo real.*
 
