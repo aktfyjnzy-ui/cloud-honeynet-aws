@@ -262,7 +262,7 @@ R100583 --> R100576
 ## 3. local_rules.xml
 
 **Ruta:** `/var/ossec/etc/rules/local_rules.xml`  
-**Archivo fuente:** [`configs/wazuh/local_rules.xml`](https://www.perplexity.ai/configs/wazuh/local_rules.xml)
+**Archivo fuente:** [`configs/wazuh/local_rules.xml`](../../configs/local_rules.xml)
 
 ## Contenido completo
 ```xml
