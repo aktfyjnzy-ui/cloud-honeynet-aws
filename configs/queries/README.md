@@ -8,7 +8,7 @@ del pipeline de detección. Todas son compatibles con el index pattern
 ---
 
 ## Estructura
-
+```text
 queries/  
 ├── README.md Este archivo  
 └── json/ Queries exportadas desde OpenSearch  
@@ -21,7 +21,7 @@ queries/
 ├── query-07-alertas-ti.json  
 ├── query-08-comandos-cowrie.json  
 └── query-09-protocolos-dionaea.json
-
+```
 >Cada archivo JSON corresponde a una visualización concreta del Wazuh Dashboard
 (OpenSearch). Se pueden importar directamente en DevTools o usar como referencia
 para construir paneles y dashboards personalizados.
