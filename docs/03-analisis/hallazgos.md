@@ -346,11 +346,11 @@ LATERAL_MOVEMENT   → T1021.002 (SMB)  H3 nivel 6
 
 ## Referencias
 
-- [IoC estructurados](cloud-honeynet-aws/docs/03-analisis/ioc)
+- [IoC estructurados](../../docs/03-analisis/ioc.md)
     
-- [Reglas de detección](cloud-honeynet-aws/docs/02-wazuh-integracion/reglas-custom)
+- [Reglas de detección](../../docs/02-wazuh-integracion/reglas-custom)
     
-- [Queries de análisis](cloud-honeynet-aws/configs/queries/README)
+- [Queries de análisis](../../configs/queries/README.md)
     
 - [MITRE ATT&CK — Enterprise Matrix](https://attack.mitre.org/matrices/enterprise/)
     
