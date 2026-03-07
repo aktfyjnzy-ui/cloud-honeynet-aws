@@ -247,7 +247,7 @@ en los tres honeypots de la siguiente manera:
 | Cowrie | 9,838 | 7.1% | SSH TCP/22 |
 | **TOTAL** | **137,657** | **100%** | |
 
-> **Figura 5.1** — `screenshot-wazuh-main-dashboard.png`[Dashboard principal-Wazuh](../screenshots/dashboard/wazuh-main-dashboard.png)
+> **Figura 5.1** — ![Dashboard principal-Wazuh](../screenshots/dashboard/wazuh-main-dashboard.png)
 > *Vista general del Wazuh Dashboard con el contador total de eventos,
 > distribución por honeypot y mapa de ataque en tiempo real.*
 
@@ -268,7 +268,7 @@ El volumen diario promedio fue de **4,588 eventos/día** excluyendo los dos
 picos principales. El día con menor actividad registró 0 eventos (múltiples
 fechas en la semana del 14–19 de febrero, período de menor intensidad).
 
-> **Figura 5.2** — `screenshot-timeline-eventos-diarios.png`
+> **Figura 5.2** — ![Timeline de eventos por honeypot](../screenshots/dashboard/events-timeline-by-honepot.png)
 > *Gráfico de línea temporal con los eventos diarios durante todo el período,
 > mostrando los dos picos principales del 22 de febrero y 3 de marzo de 2026.*
 
@@ -318,9 +318,8 @@ infraestructura big data y middleware.
 > bots se actualizan con el año en curso. Esta práctica implica que contraseñas
 > que incorporan el año vigente no representan fortaleza adicional real.
 
-> **Figura 6.1** — `screenshot-cowrie-credenciales-dashboard.png`
-> *Dashboard Wazuh mostrando el ranking de credenciales capturadas por Cowrie,
-> con filtro por regla 5710 (SSH authentication failed).*
+> **Figura 6.1** — `screenshot-cowrie-credenciales-dashboard.png`![Top Credenciales capturadas con cowrie](../screenshots/cowrie/cowrie-credenciales-dashboard.png)
+> *Dashboard Wazuh mostrando el ranking de credenciales capturadas por Cowrie.*
 
 #### 6.1.2 Comandos Ejecutados en Sesiones Activas
 
@@ -380,10 +379,6 @@ del mismo C2 o toolkit compartido.
 - **T1543** — Create or Modify System Process (persistencia con `nohup`)
 - **T1570** — Lateral Tool Transfer (lista de IPs para propagación)
 
-> **Figura 6.2** — `screenshot-cowrie-sessions-comandos.png`
-> *Vista de sesiones Cowrie en Wazuh Dashboard con detalle de comandos
-> ejecutados, IPs de origen y timestamps de las sesiones de botnet.*
-
 ### 6.2 T-Pot CE — Multi-Honeypot
 
 T-Pot CE capturó **63,481 eventos** distribuidos en múltiples servicios
@@ -405,14 +400,6 @@ La técnica MITRE predominante fue **T1046 — Network Service Discovery**
 con 41,859 eventos, representando el patrón de reconocimiento masivo
 automatizado característico de escáneres de internet como Shodan, Masscan
 y herramientas de botnet.
-
-> **Figura 6.3** — `screenshot-tpot-attack-map.png`
-> *Attack Map de T-Pot CE mostrando el mapa mundial de origen de ataques
-> en tiempo real con geolocalización de IPs atacantes.*
-
-> **Figura 6.4** — `screenshot-tpot-dashboard-wazuh.png`
-> *Dashboard Wazuh con eventos de T-Pot CE, distribución por servicio
-> interno y top IPs atacantes filtradas por honeypot.*
 
 ### 6.3 Dionaea — Malware Capture Honeypot
 
@@ -446,10 +433,6 @@ y ransomware en entornos Windows corporativos.
 de shares administrativos SMB, técnica de movimiento lateral y propagación
 - **T1203** (Exploitation for Client Execution): 159 eventos — intentos de
 explotación de vulnerabilidades en servicios capturados
-
-> **Figura 6.5** — `screenshot-dionaea-dashboard-wazuh.png`
-> *Dashboard Wazuh con eventos de Dionaea, distribución por puerto,
-> top IPs de SMB scanning y alertas TI correlacionadas.*
 
 ---
 
@@ -487,9 +470,9 @@ adicionales no listados individualmente.
 > Bulgaria aparece exclusivamente en T-Pot, patrón consistente con bots
 > especializados en scanning de servicios web y gestión remota (RDP, WinRM).
 
-> **Figura 7.1** — `screenshot-geomap-paises.png`
-> *Mapa de calor geográfico en Wazuh Dashboard mostrando la distribución
-> global de eventos por país de origen durante el período completo.*
+> **Figura 7.1** — `screenshot-geomap-paises.png`![Mapa geográfico de eventos](../screenshots/dashboard/attack-world-map-5-days.png)
+> *Mapa geográfico en Wazuh Dashboard mostrando la distribución
+> global de eventos por país de origen durante un periodo de operación de 5 días.*
 
 ### 7.2 Top 10 IPs Atacantes Externas
 
@@ -557,14 +540,6 @@ Movimiento Lateral →  T1021.002  SMB Admin Shares (Dionaea)
 Propagación        →  T1570  Lateral Tool Transfer (lista IPs botnet)
 ```
 
-> **Figura 8.1** — `screenshot-mitre-navigator.png`
-> *MITRE ATT\&CK Navigator layer con las 6 técnicas confirmadas resaltadas,
-> exportado desde Wazuh Dashboard durante el período de operación.*
-
-> **Figura 8.2** — `screenshot-wazuh-reglas-mitre.png`
-> *Vista de alertas en Wazuh con campo `rule.mitre.technique` mostrando
-> el mapeo automático generado por las reglas de Wazuh.*
-
 ---
 
 ## 9. Threat Intelligence
@@ -575,10 +550,6 @@ El Wazuh Manager ejecutó correlación en tiempo real contra una CDB local
 actualizada con los feeds de AbuseIPDB, GreyNoise y OTX. Las reglas
 100578–100580 generaron un total de **85 alertas de nivel 10+** durante
 el período, correspondientes a 3 IPs únicas con match confirmado.
-
-> **Figura 9.1** — `screenshot-alertas-ti-wazuh.png`
-> *Dashboard de alertas Wazuh filtradas por reglas 100578–100580,
-> mostrando las 85 alertas TI con nivel de severidad, IP y honeypot.*
 
 ### 9.2 Tabla Consolidada de IPs Investigadas
 
@@ -623,11 +594,11 @@ confirmando interacción activa con el honeypot
 desde US, DE, FR, JP, ZA, PL, SG, TR — operación activa a escala planetaria.
 ThreatBook Intelligence clasifica a `3.130.168.2` como "Zombie/Scanner".
 
-> **Figura 9.2** — `screenshot-abuseipdb-18.218.118.203.png`
+> **Figura 9.1** — ![Reporte AbuseIPDB de 18.218.118.203](../screenshots/ti-reports/report-abuseipdb-18.218.118.203.png)
 > *Reporte AbuseIPDB de la IP 18.218.118.203 mostrando score 100/100,
 > hostname scan.visionheight.com y detalle de categorías de abuso.*
 
-> **Figura 9.3** — `screenshot-greynoise-3.130.168.2.png`
+> **Figura 9.2** — ![Reporte GreyNoise de 3.130.168.2](../screenshots/ti-reports/screenshots/ti-reports/report-greynoise-3.130.168.2.png)
 > *Reporte GreyNoise Community mostrando clasificación "malicious",
 > noise=true, riot=false para la IP 3.130.168.2.*
 
@@ -663,7 +634,7 @@ auto-propagación tipo **EternalBlue** (MS17-010), **WannaCry** o variantes
 activas en 2026. Este hallazgo tiene implicaciones de seguridad pública
 que trascienden el alcance del presente proyecto.
 
-> **Figura 9.4** — `screenshot-abuseipdb-201.187.98.150.png`
+> **Figura 9.3** — ![Reporte AbuseIPDB de 201.187.98.150](../screenshots/ti-reports/report-abuseipdb-201.187.98.150.png)
 > *Reporte AbuseIPDB de la IP 201.187.98.150 mostrando score 3/100,
 > ISP Hospital Base Valdivia y los 4 reportes previos de SMB scanning.*
 
@@ -907,7 +878,7 @@ valor académico y profesional al proyecto.
 
 | Recurso         | ID / Valor                                                |
 | :-------------- | :-------------------------------------------------------- |
-| VPC ID          | `vpc-XXXXXXXX`                                            |
+| VPC ID          | `vpc-01b772a4cca66614f`                                            |
 | Región          | us-east-1 (N. Virginia)                                   |
 | Cowrie EC2      | `i-0d96a8152d9c004ec` · t3.micro · Ubuntu 22.04 LTS       |
 | T-Pot CE EC2    | `i-070eb1a67939cdd25` · m7i-flex.large · Ubuntu 22.04 LTS |
@@ -919,7 +890,7 @@ valor académico y profesional al proyecto.
 Los archivos JSON con las 9 queries ejecutadas se encuentran en:
 
 ```
-data/queries/
+configs/queries/json/
 ├── query-01-conteo-honeypot.json
 ├── query-02-top20-ips.json
 ├── query-03-top-15-paises.json
@@ -938,39 +909,20 @@ Los reportes crudos de AbuseIPDB y GreyNoise para las 5 IPs investigadas
 se encuentran en:
 
 ```
-data/ti-reports/
-├── reporte-abuseipdb-201.187.98.150-chile.json
-├── reporte-abuseipdb-3.130.168.2-usa.json
-├── reporte-abuseipdb-3.129.187.38-usa.json
-├── reporte-abuseipdb-18.218.118.203-usa.json
-├── reporte-abuseipdb-158.51.96.38-usa.json
-├── reporte-greynoise-201.187.98.150-chile.json
-├── reporte-greynoise-3.130.168.2-usa.json
-├── reporte-greynoise-3.129.187.38-usa.json
-├── reporte-greynoise-18.218.118.203-usa.json
-└── reporte-greynoise-158.51.96.38-usa.json
+docs/03-analisis/evidencias-ti
+├── abuseipdb-summary-158.51.96.38.json
+├── abuseipdb-summary-18.218.118.203.json
+├── abuseipdb-summary-201.187.98.150.json
+├── abuseipdb-summary-3.129.187.38.json
+├── abuseipdb-summary-3.130.168.2.json
+├── reporte-greynoise-158.51.96.38-USA.json
+├── reporte-greynoise-18.218.118.203-USA.json
+├── reporte-greynoise-201.187.98.150-CHILE.json
+├── reporte-greynoise-3.129.187.38-USA.json
+└── reporte-greynoise-3.130.168.2-USA.json
 ```
 
-
-### Anexo D — Screenshots de Dashboards
-
-| Archivo                                        | Contenido                                |
-| :--------------------------------------------- | :--------------------------------------- |
-| `screenshot-wazuh-main-dashboard.png`          | Vista general del dashboard principal    |
-| `screenshot-timeline-eventos-diarios.png`      | Gráfico de timeline diario completo      |
-| `screenshot-cowrie-credenciales-dashboard.png` | Ranking credenciales SSH Cowrie          |
-| `screenshot-cowrie-sessions-comandos.png`      | Sesiones activas con comandos capturados |
-| `screenshot-tpot-dashboard-wazuh.png`          | Dashboard T-Pot en Wazuh                 |
-| `screenshot-dionaea-dashboard-wazuh.png`       | Dashboard Dionaea en Wazuh               |
-| `screenshot-geomap-paises.png`                 | Mapa geográfico de eventos               |
-| `screenshot-mitre-navigator.png`               | MITRE ATT\&CK Navigator layer            |
-| `screenshot-wazuh-reglas-mitre.png`            | Alertas con campo rule.mitre.technique   |
-| `screenshot-alertas-ti-wazuh.png`              | Alertas TI (reglas 100578–100580)        |
-| `screenshot-abuseipdb-18.218.118.203.png`      | Reporte AbuseIPDB 18.218.118.203         |
-| `screenshot-greynoise-3.130.168.2.png`         | Reporte GreyNoise 3.130.168.2            |
-| `screenshot-abuseipdb-201.187.98.150.png`      | Reporte AbuseIPDB 201.187.98.150         |
-
-### Anexo E — Indicadores de Compromiso (IoC) Consolidados
+### Anexo D — Indicadores de Compromiso (IoC) Consolidados
 
 ```yaml
 # IoC List — Cloud HoneyNet 2026 — TLP:WHITE
