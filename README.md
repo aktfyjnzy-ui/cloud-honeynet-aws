@@ -233,7 +233,7 @@ académicos y de investigación en ciberseguridad defensiva (Blue Team).
 
 ## Informe Completo
 
-→ [`docs/04-informe-final.md`](cloud-honeynet-aws/docs/04-informe-final)
+→ [`docs/04-informe-final.md`](./docs/04-informe-final)
 
 ---
 
