@@ -383,7 +383,7 @@ sudo grep "cowrie.json" /var/ossec/logs/ossec.log
 
 | Archivo                             | Contenido                                                                                                                   |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `cowrie-wazuh-agent-active.png`     | Dashboard Wazuh → Endpoints: agente `ip-10-0-10-36` en estado **active**                                                    |
+| `cowrie-wazuh-agent-active.png` [Agente Wazuh Cowrie activo](../../screenshots/cowrie/cowrie-wazuh-agent-active.png)     | Dashboard Wazuh → Endpoints: agente `ip-10-0-10-36` en estado **active**                                                    |
 | `cowrie-archives-eventos.png`       | Discover `wazuh-archives-*` filtrando `data.@source:"cowrie"` con eventos `cowrie.session.connect` y `cowrie.command.input` |
 | `cowrie-alerts-brute.png`           | Discover `wazuh-alerts-*` con alertas (brute force SSH)                                                                     |
 | `cowrie-credenciales-dashboard.png` | Dashboard con ranking de credenciales capturadas                                                                            |
