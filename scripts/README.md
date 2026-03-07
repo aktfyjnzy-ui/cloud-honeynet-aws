@@ -7,7 +7,7 @@ el pipeline de Threat Intelligence y el sistema de notificaciones.
 ---
 
 ## Estructura
-
+```text
 scripts/  
 ├── telegram/  
 │ └── send_telegram.sh Envío de notificaciones vía Telegram Bot API  
@@ -18,7 +18,7 @@ scripts/
 ├── ti_emit_matches.py Emisión de matches TI al socket de analysisd  
 ├── run_ti_pipeline.sh Orquestador — pipeline baseline (sin APIs)  
 └── run_ti_enrichment_v1.sh Orquestador — pipeline de enriquecimiento
-
+```
 
 ---
 
@@ -217,7 +217,7 @@ y **no se subieron al repositorio**:
 ## Automatización — Cron
 
 Ver configuración completa en  
-[`docs/02-wazuh-integracion/threat-intelligence.md`](cloud-honeynet-aws/docs/02-wazuh-integracion/threat-intelligence)
+[`docs/02-wazuh-integracion/threat-intelligence.md`](./docs/02-wazuh-integracion/threat-intelligence.md)
 
 ```bash
 # Verificar cron activo
@@ -225,9 +225,9 @@ sudo crontab -l -u root | grep ti
 ```
 ## Referencias
 
-- [Documentación TI completa](cloud-honeynet-aws/docs/02-wazuh-integracion/threat-intelligence)
+- [Documentación TI completa](./docs/02-wazuh-integracion/threat-intelligence.md)
     
-- [Reglas Wazuh que consumen la CDB](cloud-honeynet-aws/docs/02-wazuh-integracion/reglas-custom)
+- [Reglas Wazuh que consumen la CDB](./docs/02-wazuh-integracion/reglas-custom)
     
 - [AbuseIPDB API v2](https://docs.abuseipdb.com/)
     
