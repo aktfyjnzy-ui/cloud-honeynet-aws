@@ -299,7 +299,7 @@ en el Dashboard bajo el index pattern `wazuh-archives-*`.
 
 ## 7. Reglas Custom en Wazuh Manager
 
-Ver archivo completo: [`configs/cowrie/wazuh/100-cowrie_rules.xml`](100-cowrie_rules.xml.md)
+Ver archivo completo: [`configs/100-cowrie_rules.xml`](../100-cowrie_rules.xml.md)
 
 ## Resumen de reglas implementadas
 
