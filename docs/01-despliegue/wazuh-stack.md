@@ -4,7 +4,7 @@
 > **IP privada:** `10.0.20.51`  
 > **Versión:** Wazuh Manager + Indexer + Dashboard 4.14.2  
 > **Fecha de despliegue:** 2026-02-04  
-> **Estado al cierre del proyecto:** Operativo (30 días continuos)
+> **Estado al cierre del proyecto:** Operativo (~7 días continuos en estado final)
 
 ---
 
