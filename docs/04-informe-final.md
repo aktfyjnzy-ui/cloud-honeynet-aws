@@ -26,8 +26,8 @@
 ## 1. Resumen Ejecutivo
 
 Este informe documenta los resultados de la operación de una red de señuelos
-(HoneyNet) cloud-native desplegada en Amazon Web Services durante un período de
-30 días (2026-02-04 al 2026-03-06). El sistema estuvo compuesto por tres
+(HoneyNet) cloud-native desplegada en Amazon Web Services durante ~7 días de operación 
+en estado final (proyecto: 2026-02-04 al 2026-03-06). El sistema estuvo compuesto por tres
 honeypots especializados — **Cowrie**, **T-Pot CE** y **Dionaea** — instrumentados
 con el stack **Wazuh Manager + Indexer + Dashboard** para correlación centralizada
 de alertas, enriquecimiento automático con feeds de Threat Intelligence (TI) y
@@ -44,7 +44,7 @@ visualización en tiempo real.
 | **Técnicas MITRE ATT&CK confirmadas** | **6** |
 | **Alertas de Threat Intelligence** | **85** |
 | **IPs con match en blacklists** | 3 confirmadas (score 100/100) |
-| **Período de operación** | 30 días |
+| **Período de operación** | ~7 días (estado final operativo) |
 | **Costo operativo (AWS, 7 días)** | ~USD 21.60 |
 
 ### Hallazgos Destacados
@@ -760,7 +760,7 @@ simplemente añadiendo el año vigente al final o al inicio.
 
 | Objetivo                     | Meta                     | Resultado                   | Estado       |
 | :--------------------------- | :----------------------- | :-------------------------- | :----------- |
-| OE1: Despliegue de honeypots | 3 honeypots operativos   | 3/3 operativos 30 días      | Cumplido     |
+| OE1: Despliegue de honeypots | 3 honeypots operativos   | 3/3 operativos ~7 días      | Cumplido     |
 | OE2: Centralización de logs  | Pipeline Wazuh funcional | 137,657 eventos indexados   | Cumplido     |
 | OE3: Correlación TI          | Alertas TI automáticas   | 85 alertas generadas        | Cumplido     |
 | OE4: Técnicas MITRE          | ≥ 5 técnicas confirmadas | 6 confirmadas + 4 inferidas | **Superado** |
