@@ -3,7 +3,7 @@
 > **Instancia:** `i-0d96a8152d9c004ec` · t3.micro · Ubuntu 22.04 LTS  
 > **IP privada:** `10.0.10.36`  
 > **Fecha de despliegue:** 2026-02-06  
-> **Estado al cierre del proyecto:** Operativo (30 días continuos)
+> **Estado al cierre del proyecto:** Operativo (~7 días continuos en estado final)
 
 ---
 
