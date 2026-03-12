@@ -4,7 +4,7 @@
 > **IP privada:** `10.0.10.76`  
 > **Versión T-Pot:** CE 24.04.1  
 > **Fecha de despliegue:** 2026-02-12  
-> **Estado al cierre del proyecto:** Operativo (30 días continuos)
+> **Estado al cierre del proyecto:** (~7 días continuos en estado final)
 
 ---
 
