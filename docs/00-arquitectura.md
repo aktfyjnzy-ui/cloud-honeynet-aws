@@ -316,8 +316,8 @@ siguiendo el principio de mínima exposición:
 | Puerto admin Cowrie | No especificado | **TCP/22222** | Separación clara entre canal honeypot (22) y canal admin |
 | Transporte de logs | Wazuh Agent + Filebeat | **Wazuh Agent únicamente** | Suficiente para el volumen y latencia requeridos; simplifica la arquitectura |
 | Captura de binarios Dionaea | Habilitada | **Parcialmente** (archivos `.tmp` de 0 bytes) | Egress cerrado previene descarga completa de payloads — decisión consciente para evitar pivoting |
-| Período de operación | 7 días | **30 días** | Decisión de extender para maximizar captura y análisis |
-| Costo operativo | ≤ USD 30 / 7 días | ~USD 106 / 30 días (~USD 24.7/semana) | Consecuencia directa de la extensión del período |
+| Período de operación | 7 días | **~7 días** (estado final operativo) | Despliegue y configuración ocuparon ~23 días adicionales del proyecto |
+| Costo operativo | ≤ USD 30 / 7 días | ~USD 21.60 (operación) · ~USD 106 (proyecto completo 30 días) | Los días de despliegue y configuración incrementaron el costo total |
 
 ---
 
